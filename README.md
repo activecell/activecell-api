@@ -36,13 +36,13 @@ Authentication
 
 If you're making a private integration with ActiveCell for your own purposes, you can use HTTP Basic authentication. This is secure since all requests use SSL.
 
-_Future: If you're making a public integration with ActiveCell for others to enjoy, you must use OAuth 2. This allows users to authorize your application to use Basecamp on their behalf without having to copy/paste API tokens or touch sensitive login info._
+_Future: If you're making a public integration with ActiveCell for others to enjoy, you must use OAuth 2. This allows users to authorize your application to use ActiveCell on their behalf without having to copy/paste API tokens or touch sensitive login info._
 
 
 No XML, just JSON
 -----------------
 
-We only support JSON for serialization of data. Our format is to have no root element and we use snake\_case to describe attribute keys. This means that you have to send `Content-Type: application/json; charset=utf-8` when you're POSTing or PUTing data into Basecamp. **All API URLs end in .json to indicate that they accept and return JSON.**
+We only support JSON for serialization of data. Our format is to have no root element and we use snake\_case to describe attribute keys. This means that you have to send `Content-Type: application/json; charset=utf-8` when you're POSTing or PUTing data into ActiveCell. **All API URLs end in .json to indicate that they accept and return JSON.**
 
 You'll receive a `415 Unsupported Media Type` response code if you attempt to use a different URL suffix or leave out the `Content-Type` header.
 
