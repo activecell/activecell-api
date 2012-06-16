@@ -20,7 +20,7 @@ Get channels
   {
     "id": 2,
     "name": "Direct sales",
-    "commission": 0\.20,
+    "commission": 20,
   },
   {
     "id": 3,
@@ -41,9 +41,9 @@ Get channel
   "name": "Content marketing",
   "commission": 0,
 	"channel-segment mix":[
-		{"segment_id":1, "distribution":0.40},
-		{"segment_id":2, "distribution":0.30},
-		{"segment_id":3, "distribution":0.30}
+		{"segment_id":1, "distribution":40},
+		{"segment_id":2, "distribution":30},
+		{"segment_id":3, "distribution":30}
 	]
 }
 ```
@@ -57,11 +57,10 @@ Create channel
 ```json
 {
   "name": "Affiliate sales",
-  "commission": 0\.10,
+  "commission": 10,
 	"channel-segment mix":[
-		{"segment_id":1, "distribution":0.60},
-		{"segment_id":2, "distribution":0.40}
-	]
+		{"segment_id":1, "distribution":60},
+		{"segment_id":2, "distribution":40}
 	]
 }
 ```
@@ -79,9 +78,9 @@ Update channel
 ```json
 {
   "name": "Direct sales",
-  "commission": 0\.25,
+  "commission": 25,
 	"channel-segment mix":[
-		{"segment_id":1, "distribution":1.00}
+		{"segment_id":1, "distribution":100}
 	]
 }
 ```
