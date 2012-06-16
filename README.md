@@ -70,6 +70,7 @@ You can perform up to 500 requests per 10 second period from the same IP address
 API ready for use
 -----------------
 
+* [Channels](https://github.com/profitably/activecell-api/blob/master/sections/channels.md)
 
 
 API still under development
@@ -81,7 +82,6 @@ API still under development
 * Products
 * Revenue streams
 * Customers
-* Channels
 * Segments
 * Customer acquisition stages
 * Employees
