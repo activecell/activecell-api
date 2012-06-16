@@ -3,7 +3,7 @@ Channels
 
 > Quotes are a great idea. - Adam Neary
 
-What is a channel? Let me tell you in several sentences! What is a channel? Let me tell you in several sentences! What is a channel? Let me tell you in several sentences! What is a channel? Let me tell you in several sentences!
+Channels are sources of customers. Informal channels such as "Word of Mouth" should be included, as well as internally managed channels such as "Direct Sales." Channels can optionally have a variable commission associated with them. Finally, channel/segment mix is the forecast distribution of customer segments that a channel will bring in, such as 100% platinum customers or 60/40 one-time and loyalty customers.
 
 Get channels
 ------------
@@ -33,13 +33,18 @@ Get channels
 Get channel
 -----------
 
-* `GET /channels/1.json` will return the specified channel.
+* `GET /channels/1.json` will return the specified channel and its forecast channel/segment mix
 
 ```json
 {
   "id": 1,
   "name": "Content marketing",
-  "commission": 0
+  "commission": 0,
+	"channel-segment mix":[
+		{"segment_id":1, "distribution":0.40},
+		{"segment_id":2, "distribution":0.30},
+		{"segment_id":3, "distribution":0.30}
+	]
 }
 ```
 
@@ -52,9 +57,16 @@ Create channel
 ```json
 {
   "name": "Affiliate sales",
-  "commission": 0\.10
+  "commission": 0\.10,
+	"channel-segment mix":[
+		{"segment_id":1, "distribution":0.60},
+		{"segment_id":2, "distribution":0.40}
+	]
+	]
 }
 ```
+
+Commission will default to 0% if not provided. Channel/segment mix will allocate 100% to the first segment if not provided.
 
 This will return `201 Created`, with the location of the new channel in the `Location` header along with the current JSON representation of the channel if the creation was a success. See the **Get channel* endpoint for more info.
 
@@ -67,7 +79,10 @@ Update channel
 ```json
 {
   "name": "Direct sales",
-  "commission": 0\.25
+  "commission": 0\.25,
+	"channel-segment mix":[
+		{"segment_id":1, "distribution":1.00}
+	]
 }
 ```
 
