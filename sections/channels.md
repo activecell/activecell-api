@@ -20,7 +20,7 @@ Get channels
   {
     "id": 2,
     "name": "Direct sales",
-    "commission": 0.20,
+    "commission": 0\.20,
   },
   {
     "id": 3,
@@ -52,7 +52,7 @@ Create channel
 ```json
 {
   "name": "Affiliate sales",
-  "commission": 0.10
+  "commission": 0\.10
 }
 ```
 
@@ -67,14 +67,14 @@ Update channel
 ```json
 {
   "name": "Direct sales",
-  "commission": 0.25
+  "commission": 0\.25
 }
 ```
 
 This will return `200 OK` if the update was a success, along with the current JSON representation of the channel in the response body. If the user does not have access to update the channel, you'll see `403 Forbidden`. See the **Get channel** endpoint for more info.
 
 
-Delete message
+Delete channel
 -------------
 
 * `DELETE /channels/1.json` will delete the channel specified and return `204 No Content` if that was successful. If the user does not have access to delete the channel, you'll see `403 Forbidden`.
