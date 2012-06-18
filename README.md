@@ -70,17 +70,19 @@ You can perform up to 500 requests per 10 second period from the same IP address
 API ready for use
 -----------------
 
+* [Companies](https://github.com/profitably/activecell-api/blob/master/sections/companies.md)
+* [Users](https://github.com/profitably/activecell-api/blob/master/sections/users.md)
+* [Scenarios](https://github.com/profitably/activecell-api/blob/master/sections/scenarios.md)
+
+* [Revenue streams](https://github.com/profitably/activecell-api/blob/master/sections/streams.md)
+
 * [Channels](https://github.com/profitably/activecell-api/blob/master/sections/channels.md)
 
 
 API still under development
 ---------------------------
 
-* Users
-* Companies
-* Scenarios
 * Products
-* Revenue streams
 * Customers
 * Segments
 * Customer acquisition stages
@@ -92,8 +94,13 @@ API still under development
 * Financial history
 * Timesheet history
 * Conversion history
+* Unit revenue forecast
+* Unit cac forecast
 * Conversion forecast
 * Churn forecast
+* Staffing forecast
+* Employee cost forecast
+* Vendor cost forecast
 
 
 Help us make it better

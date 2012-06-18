@@ -1,47 +1,43 @@
-Channels
+Revenue Streams
 ========
 
-> Put. That coffee. Down. 
-> Coffee's for closers only. - Glengarry Glen Ross
+> Quotes are a great idea. - Adam Neary
 
-Channels are sources of customers. Informal channels such as "Word of Mouth" should be included, as well as internally managed channels such as "Direct Sales." Channels can optionally have a variable commission associated with them. Finally, channel/segment mix is the forecast distribution of customer segments that a channel will bring in, such as 100% platinum customers or 60/40 one-time and loyalty customers.
+Revenue streams are essentially categories of specific products & services. In some businesses, revenue streams as referred to as "business lines" or "service areas." Most often, revenue streams correspond to one or more revenue accounts in the chart of accounts. In larger organizations, they can correspond with departments or business units, but let's not get ahead of ourselves!
 
 
-Get channels
+Get streams
 ------------
 
-* `GET /channels.json` will return the all the channels for the company. There is no pagination because we currently limit companies to 50 channels (more than 10 is rare!).
+* `GET /streams.json` will return the all the revenue streams for the company. There is no pagination because we currently limit companies to 50 streams (more than 10 is rare!).
 
 ```json
 [
   {
     "id": 1,
-    "name": "Content marketing",
-    "commission": 0,
+    "name": "Professional services"
   },
   {
     "id": 2,
-    "name": "Direct sales",
-    "commission": 20,
+    "name": "Media purchases"
   },
   {
     "id": 3,
-    "name": "Events",
-    "commission": 0,
+    "name": "Event revenue"
   }
 ]
 ```
 
 
-Get channel
+Get stream
 -----------
 
-* `GET /channels/1.json` will return the specified channel and its forecast channel/segment mix
+* `GET /streams/1.json` will return the specified stream and its forecast channel/segment mix
 
 ```json
 {
   "id": 1,
-  "name": "Content marketing",
+  "name": "Professional services",
   "commission": 0,
 	"channel-segment mix":[
 		{"segment_id":1, "distribution":40},
@@ -96,4 +92,4 @@ Delete channel
 
 * `DELETE /channels/1.json` will delete the channel specified and return `204 No Content` if that was successful. If the user does not have access to delete the channel, you'll see `403 Forbidden`.
 
-Note: At least one channel must exist for a company, so an attempt to delete the last remaining channel will return `403 Forbidden` as well.
+Note: At least one revenue stream must exist for a company, so an attempt to delete the last remaining revenue stream will return `403 Forbidden` as well.
