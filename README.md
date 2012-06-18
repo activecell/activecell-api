@@ -70,14 +70,23 @@ You can perform up to 500 requests per 10 second period from the same IP address
 API ready for use
 -----------------
 
+Company data:
+
 * [Companies](https://github.com/profitably/activecell-api/blob/master/sections/companies.md)
 * [Users](https://github.com/profitably/activecell-api/blob/master/sections/users.md)
 * [Scenarios](https://github.com/profitably/activecell-api/blob/master/sections/scenarios.md)
 
+Product data:
+
 * [Revenue streams](https://github.com/profitably/activecell-api/blob/master/sections/streams.md)
+
+Customer data:
 
 * [Channels](https://github.com/profitably/activecell-api/blob/master/sections/channels.md)
 
+Canonical data:
+
+* [Industries](https://github.com/profitably/activecell-api/blob/master/sections/industries.md)
 
 API still under development
 ---------------------------

@@ -21,17 +21,17 @@ Get companies
     "id": 1,
     "name": "Sterling Cooper",
     "subdomain": "sterlingcooper",
-		"zip": "10010",
-		"url": "sterlingcooper.com",
-		"industry_id": 23
+    "zip": "10010",
+    "url": "sterlingcooper.com",
+    "industry_id": 23
   },
   {
     "id": 2,
     "name": "Sterling Cooper Draper Pryce",
     "subdomain": "scdp",
-		"zip": "10010",
-		"url": "sterlingcooper.com",
-		"industry_id": 23
+    "zip": "10010",
+    "url": "sterlingcooper.com",
+    "industry_id": 23
   }
 ]
 ```
@@ -46,14 +46,14 @@ Get company
   "id": 1,
   "name": "Sterling Cooper",
   "subdomain": "sterlingcooper",
-	"zip": "10010",
-	"url": "sterlingcooper.com",
-	"industry_id": 23,
-	"users": [
-	  {"id": 1, "name": "Don Draper", "email": "don.draper@sterlingcooper.com"},
-	  {"id": 2, "name": "Roger Sterling", "email": "roger.sterling@sterlingcooper.com"},
-	  {"id": 3, "name": "Bert Cooper", "email": "bert.cooper@sterlingcooper.com"}
-	],
+  "zip": "10010",
+  "url": "sterlingcooper.com",
+  "industry_id": 23,
+  "users": [
+    {"id": 1, "name": "Don Draper", "email": "don.draper@sterlingcooper.com"},
+    {"id": 2, "name": "Roger Sterling", "email": "roger.sterling@sterlingcooper.com"},
+    {"id": 3, "name": "Bert Cooper", "email": "bert.cooper@sterlingcooper.com"}
+  ],
 }
 ```
 

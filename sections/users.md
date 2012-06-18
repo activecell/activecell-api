@@ -72,7 +72,7 @@ Update user
 
 ```json
 {
-  "name": "Roger Sterling",,
+  "name": "Roger Sterling",
 	"email": "roger.t.sterling@sterlingcooper.com"
 }
 ```
