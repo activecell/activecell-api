@@ -3,7 +3,7 @@ Companies
 
 > **What's worth doing is worth doing for money.**
 >
-> - Wall Street
+> -Wall Street
 
 The company is what ties together all the information in ActiveCell. In the future, reporting will be possible across multiple companies so that franchises can view performance of separate business or for business owners who store separate business units in separate QuickBooks files.
 
