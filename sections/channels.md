@@ -1,8 +1,10 @@
 Channels
 ========
 
-> Put. That coffee. Down. 
-> Coffee's for closers only. - Glengarry Glen Ross
+> **Put. That coffee. Down.**
+> **Coffee's for closers only.**
+>
+> - Glengarry Glen Ross
 
 Channels are sources of customers. Informal channels such as "Word of Mouth" should be included, as well as internally managed channels such as "Direct Sales." Channels can optionally have a variable commission associated with them. Finally, channel/segment mix is the forecast distribution of customer segments that a channel will bring in, such as 100% platinum customers or 60/40 one-time and loyalty customers.
 

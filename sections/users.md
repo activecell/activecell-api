@@ -1,9 +1,9 @@
 Users
 =====
 
-> I fight for the users. 
+> **I fight for the users.**
 >
-> **<small>- Tron</small>**
+> - Tron
 
 ActiveCell API access is authenticated to a specific user, and that user can view user details for any company to which he/she has access. The processes of creating users and inviting new users to existing companies, however, is built into the companies model. See the **Create company* endpoint for more info.
 

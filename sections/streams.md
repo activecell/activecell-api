@@ -1,7 +1,9 @@
 Revenue Streams
 ========
 
-> Quotes are a great idea. - Adam Neary
+> **Quotes are a great idea.**
+>
+> - Adam Neary
 
 Revenue streams are essentially categories of specific products & services. In some businesses, revenue streams as referred to as "business lines" or "service areas." Most often, revenue streams correspond to one or more revenue accounts in the chart of accounts. In larger organizations, they can correspond with departments or business units, but let's not get ahead of ourselves!
 
