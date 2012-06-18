@@ -35,13 +35,31 @@ Get users
 Get user
 -----------
 
-* `GET /users/1.json` will return the specified user
+* `GET /users/1.json` will return the specified user and the companies to which he/she has access
 
 ```json
 {
   "id": 1,
   "name": "Don Draper",
-	"email": "don.draper@sterlingcooper.com"
+	"email": "don.draper@sterlingcooper.com",
+	"companies":[
+  	{
+      "id": 1,
+      "name": "Sterling Cooper",
+      "subdomain": "sterlingcooper",
+      "zip": "10010",
+      "url": "sterlingcooper.com",
+      "industry_id": 23
+    },
+    {
+      "id": 2,
+      "name": "Sterling Cooper Draper Pryce",
+      "subdomain": "scdp",
+      "zip": "10010",
+      "url": "sterlingcooper.com",
+      "industry_id": 23
+    }
+	]
 }
 ```
 
