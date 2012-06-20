@@ -10,6 +10,18 @@ The company is what ties together all the information in ActiveCell. In the futu
 But for today, all reporting flows down from a given company, and the creation of a new user is tied to the creation of a new company. Further, new users can be invited to an existing company by any user who has access to the company.
 
 
+Fields
+------
+
+* id [String] A BSON ObjectId Datatype identifier for the channel (system-defined)
+* name [String] The name of the company (user-defined or retrieved from QuickBooks)
+* subdomain [String] The subdomain to activecell.com used to access the company's data through the API and analysis through the application
+* country-id [String] A BSON ObjectId Datatype identifier for the company's origin country
+* postal-code [String] A postal code used in concert with the country field for demographic purposes ("zip code" in the USA)
+* url [String] A link to the company's primary website
+* industry-id [String] A BSON ObjectId Datatype identifier for the company's industry
+
+
 Get companies
 ------------
 
@@ -18,20 +30,22 @@ Get companies
 ```json
 [
   {
-    "id": 1,
+    "id": "17cc67093475061e3d95369d",
     "name": "Sterling Cooper",
     "subdomain": "sterlingcooper",
-    "zip": "10010",
+    "country-id": "27cc67093475061e3d95369d",
+    "postal-code": "10010",
     "url": "sterlingcooper.com",
-    "industry_id": 23
+    "industry-id": "37cc67093475061e3d95369d"
   },
   {
-    "id": 2,
+    "id": "47cc67093475061e3d95369d",
     "name": "Sterling Cooper Draper Pryce",
     "subdomain": "scdp",
-    "zip": "10010",
-    "url": "sterlingcooper.com",
-    "industry_id": 23
+    "country-id": "27cc67093475061e3d95369d",
+    "postal-code": "10010",
+    "url": "sterlingcooperdraperpryce.com",
+    "industry-id": "37cc67093475061e3d95369d"
   }
 ]
 ```
@@ -39,20 +53,21 @@ Get companies
 Get company
 -----------
 
-* `GET /companies/1.json` will return the specified company and its users
+* `GET /companies/17cc67093475061e3d95369d.json` will return the specified company and its users
 
 ```json
 {
-  "id": 1,
+  "id": "17cc67093475061e3d95369d",
   "name": "Sterling Cooper",
   "subdomain": "sterlingcooper",
-  "zip": "10010",
+  "country-id": "27cc67093475061e3d95369d",
+  "postal-code": "10010",
   "url": "sterlingcooper.com",
-  "industry_id": 23,
+  "industry-id": "37cc67093475061e3d95369d"
   "users": [
-    {"id": 1, "name": "Don Draper", "email": "don.draper@sterlingcooper.com"},
-    {"id": 2, "name": "Roger Sterling", "email": "roger.sterling@sterlingcooper.com"},
-    {"id": 3, "name": "Bert Cooper", "email": "bert.cooper@sterlingcooper.com"}
+    {"id": "57cc67093475061e3d95369d", "name": "Don Draper", "email": "don.draper@sterlingcooper.com"},
+    {"id": "67cc67093475061e3d95369d", "name": "Roger Sterling", "email": "roger.sterling@sterlingcooper.com"},
+    {"id": "77cc67093475061e3d95369d", "name": "Bert Cooper", "email": "bert.cooper@sterlingcooper.com"}
   ],
 }
 ```
@@ -69,11 +84,12 @@ _Note: In the absence of a company-specific subdomain, requests may be made to a
 {
   "name": "Sterling Cooper Draper Pryce",
   "subdomain": "scdp",
-	"zip": "10010",
-	"url": "sterlingcooper.com",
-	"industry_id": 23,
+	"country-id": "27cc67093475061e3d95369d",
+	"postal-code": "10010",
+	"url": "sterlingcooperdraperpryce.com",
+	"industry-id": "37cc67093475061e3d95369d"
 	"users": [
-		{"id": 2},
+		{"id": "67cc67093475061e3d95369d"},
 	  {"name": "Don Draper", "email": "don.draper@sterlingcooper.com", "password": "reallyWhitman"},
 		{"name": "Peggy Olson", "email": "peggy.olson@sterlingcooper.com"}
 	]
@@ -90,16 +106,16 @@ This will return `201 Created`, with the location of the new company in the `Loc
 Update channel
 --------------
 
-* `PUT /companies/2.json` will update the company from the parameters passed.
+* `PUT /companies/47cc67093475061e3d95369d.json` will update the company from the parameters passed.
 
 ```json
 {
-  "id": 2,
   "name": "Sterling Cooper Draper Pryce",
   "subdomain": "scdp",
-	"zip": "10010",
-	"url": "sterlingcooper.com",
-	"industry_id": 23
+  "country-id": "27cc67093475061e3d95369d",
+  "postal-code": "10010",
+  "url": "sterlingcooperdraperpryce.com",
+  "industry-id": "37cc67093475061e3d95369d"
 }
 ```
 
@@ -111,4 +127,4 @@ This will return `200 OK` if the update was a success, along with the current JS
 Delete company
 -------------
 
-* `DELETE /companies/1.json` will delete the company specified and return `204 No Content` if that was successful. If the user does not have access to delete the company, you'll see `403 Forbidden`.
+* `DELETE /companies/17cc67093475061e3d95369d.json` will delete the company specified and return `204 No Content` if that was successful. If the user does not have access to delete the company, you'll see `403 Forbidden`.

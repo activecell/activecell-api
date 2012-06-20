@@ -7,6 +7,16 @@ Users
 
 ActiveCell API access is authenticated to a specific user, and that user can view user details for any company to which he/she has access. The processes of creating users and inviting new users to existing companies, however, is built into the companies model. See the **Create company* endpoint for more info.
 
+
+Fields
+------
+
+* id [String] A BSON ObjectId Datatype identifier for the user (system-defined)
+* name [String] The name of the user
+* email [String] The emaill address of the user
+* companies [Array] An array of companies to which the user has access (see Get companies)
+
+
 Get users
 ------------
 
@@ -15,17 +25,17 @@ Get users
 ```json
 [
   {
-    "id": 1,
+    "id": "17cc67093475061e3d95369d",
     "name": "Don Draper",
 		"email": "don.draper@sterlingcooper.com"
   },
   {
-    "id": 2,
+    "id": "27cc67093475061e3d95369d",
     "name": "Roger Sterling",
 		"email": "roger.sterling@sterlingcooper.com"
   },
   {
-    "id": 3,
+    "id": "37cc67093475061e3d95369d",
     "name": "Bert Cooper",
 		"email": "bert.cooper@sterlingcooper.com"
   }
@@ -35,31 +45,33 @@ Get users
 Get user
 -----------
 
-* `GET /users/1.json` will return the specified user and the companies to which he/she has access
+* `GET /users/17cc67093475061e3d95369d.json` will return the specified user and the companies to which he/she has access
 
 ```json
 {
-  "id": 1,
+  "id": "17cc67093475061e3d95369d",
   "name": "Don Draper",
 	"email": "don.draper@sterlingcooper.com",
 	"companies":[
-  	{
-      "id": 1,
+    {
+      "id": "47cc67093475061e3d95369d",
       "name": "Sterling Cooper",
       "subdomain": "sterlingcooper",
-      "zip": "10010",
+      "country-id": "67cc67093475061e3d95369d",
+      "postal-code": "10010",
       "url": "sterlingcooper.com",
-      "industry_id": 23
+      "industry-id": "77cc67093475061e3d95369d"
     },
     {
-      "id": 2,
+      "id": "57cc67093475061e3d95369d",
       "name": "Sterling Cooper Draper Pryce",
       "subdomain": "scdp",
-      "zip": "10010",
-      "url": "sterlingcooper.com",
-      "industry_id": 23
+      "country-id": "67cc67093475061e3d95369d",
+      "postal-code": "10010",
+      "url": "sterlingcooperdraperpryce.com",
+      "industry-id": "77cc67093475061e3d95369d"
     }
-	]
+  ]
 }
 ```
 
@@ -86,7 +98,7 @@ This will return `201 Created`, with the location of the new user in the `Locati
 Update user
 --------------
 
-* `PUT /users/2.json` will update the user from the parameters passed.
+* `PUT /users/27cc67093475061e3d95369d.json` will update the user from the parameters passed.
 
 ```json
 {
@@ -101,4 +113,4 @@ This will return `200 OK` if the update was a success, along with the current JS
 Delete user
 -------------
 
-* `DELETE /users/1.json` will delete the user specified and return `204 No Content` if that was successful. If the user does not have access to delete the user, you'll see `403 Forbidden`.
+* `DELETE /users/17cc67093475061e3d95369d.json` will delete the user specified and return `204 No Content` if that was successful. If the user does not have access to delete the user, you'll see `403 Forbidden`.

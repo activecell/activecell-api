@@ -9,6 +9,30 @@ Channels
 Channels are sources of customers. Informal channels such as "Word of Mouth" should be included, as well as internally managed channels such as "Direct Sales." Channels can optionally have a variable commission associated with them. Finally, channel/segment mix is the forecast distribution of customer segments that a channel will bring in, such as 100% platinum customers or 60/40 one-time and loyalty customers.
 
 
+Fields
+------
+
+Channel: 
+
+* id [String] A BSON ObjectId Datatype identifier for the channel (system-defined)
+* name [String] The name of the channel (user-defined)
+* commission [Float] A percentage rate to be applied to revenue to calculate commission value
+** The value must be greater than or equal to 0 but _may_ be greater than 1.0
+** _Note: 20% should be represented as 0.2 rather than 20._
+* channel-segment mix [Array] An array of channel/segment mix line items (see below)
+
+Channel/segment mix:
+
+* segment_id [String] A BSON ObjectId Datatype identifier for the segment (system-defined)
+* distribution [Float] A percentage rate representing the share of inbound channel customers forecasted to the segment
+
+Business rules
+--------------
+
+**Every channel must have a forecast "channel/segment mix" that adds to 100%.**
+This is the forecast "distribution" of inbound customers across the company's segments. In business terms, an example might be that you expect 100% of your customers from events to be "platinum" customers if your segments are silver/gold/platinum. Or, you might reasonably expect your inbound web traffic to be split 70/30 between free and paid segments.
+
+
 Get channels
 ------------
 
@@ -17,17 +41,17 @@ Get channels
 ```json
 [
   {
-    "id": 1,
+    "id": "17cc67093475061e3d95369d",
     "name": "Content marketing",
     "commission": 0,
   },
   {
-    "id": 2,
+    "id": "27cc67093475061e3d95369d",
     "name": "Direct sales",
-    "commission": 20,
+    "commission": 0.2,
   },
   {
-    "id": 3,
+    "id": "37cc67093475061e3d95369d",
     "name": "Events",
     "commission": 0,
   }
@@ -42,13 +66,13 @@ Get channel
 
 ```json
 {
-  "id": 1,
+  "id": "17cc67093475061e3d95369d",
   "name": "Content marketing",
   "commission": 0,
 	"channel-segment mix":[
-		{"segment_id":1, "distribution":40},
-		{"segment_id":2, "distribution":30},
-		{"segment_id":3, "distribution":30}
+		{"segment_id":"47cc67093475061e3d95369d", "distribution":0.4},
+		{"segment_id":"57cc67093475061e3d95369d", "distribution":0.3},
+		{"segment_id":"67cc67093475061e3d95369d", "distribution":0.3}
 	]
 }
 ```
@@ -62,10 +86,10 @@ Create channel
 ```json
 {
   "name": "Affiliate sales",
-  "commission": 10,
+  "commission": 0.1,
 	"channel-segment mix":[
-		{"segment_id":1, "distribution":60},
-		{"segment_id":2, "distribution":40}
+		{"segment_id":"47cc67093475061e3d95369d", "distribution":0.6},
+		{"segment_id":"57cc67093475061e3d95369d", "distribution":0.4}
 	]
 }
 ```
@@ -78,14 +102,14 @@ This will return `201 Created`, with the location of the new channel in the `Loc
 Update channel
 --------------
 
-* `PUT /channels/2.json` will update the channels from the parameters passed.
+* `PUT /channels/27cc67093475061e3d95369d.json` will update the channels from the parameters passed.
 
 ```json
 {
   "name": "Direct sales",
   "commission": 25,
 	"channel-segment mix":[
-		{"segment_id":1, "distribution":100}
+		{"segment_id":"47cc67093475061e3d95369d", "distribution":1}
 	]
 }
 ```
@@ -96,6 +120,6 @@ This will return `200 OK` if the update was a success, along with the current JS
 Delete channel
 -------------
 
-* `DELETE /channels/1.json` will delete the channel specified and return `204 No Content` if that was successful. If the user does not have access to delete the channel, you'll see `403 Forbidden`.
+* `DELETE /channels/17cc67093475061e3d95369d.json` will delete the channel specified and return `204 No Content` if that was successful. If the user does not have access to delete the channel, you'll see `403 Forbidden`.
 
 Note: At least one channel must exist for a company, so an attempt to delete the last remaining channel will return `403 Forbidden` as well.

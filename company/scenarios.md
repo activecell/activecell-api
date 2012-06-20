@@ -1,13 +1,20 @@
 Scenarios
 =========
 
-> **Quotes are a great idea.**
+> **Worst case scenario? When he wakes up, his mind is completely gone.**
 >
-> -Adam Neary
+> -Inception
 
 ActiveCell allows for multiple "scenarios" for your forecasts. By default, all forecast inputs begin in an initial "Base" scenario, but new scenarios can be created by duplicating an existing scenario and then editing the new scenario.
 
 Note: Historical data is not associated with a scenario. (There should only be one version of what already happened!)
+
+
+Fields
+------
+
+* id [String] A BSON ObjectId Datatype identifier for the scenario (system-defined)
+* name [String] The name of the scenario (user-defined, though "Base" is the default first scenario)
 
 
 Get scenarios
@@ -18,15 +25,15 @@ Get scenarios
 ```json
 [
   {
-    "id": 1,
+    "id": "17cc67093475061e3d95369d",
     "name": "Base"
   },
   {
-    "id": 2,
+    "id": "27cc67093475061e3d95369d",
     "name": "Optimistic"
   },
   {
-    "id": 3,
+    "id": "37cc67093475061e3d95369d",
     "name": "Pessimistic"
   }
 ]
@@ -36,11 +43,11 @@ Get scenarios
 Get scenario
 -----------
 
-* `GET /scenarios/1.json` will return the specified scenario and all of its forecast inputs
+* `GET /scenarios/17cc67093475061e3d95369d.json` will return the specified scenario and all of its forecast inputs
 
 ```json
 {
-  "id": 1,
+  "id": "17cc67093475061e3d95369d",
   "name": "Base",
 	"unit revenue forecast":[
 		_See the **Get unit revenue forecast* endpoint for more info_
@@ -103,7 +110,8 @@ Create scenario
 
 ```json
 {
-  "source scenario id": 1
+  "source scenario id": "17cc67093475061e3d95369d",
+  "name":"Growth mode"
 }
 ```
 
@@ -113,11 +121,11 @@ This will return `201 Created`, with the location of the new scenario in the `Lo
 Update scenario
 --------------
 
-* `PUT /scenarios/2.json` will update the scenario from the parameters passed.
+* `PUT /scenarios/27cc67093475061e3d95369d.json` will update the scenario from the parameters passed.
 
 ```json
 {
-  "name": "Growth mode"
+  "name": "Exceptional growth mode"
 }
 ```
 
@@ -127,6 +135,6 @@ This will return `200 OK` if the update was a success, along with the current JS
 Delete scenario
 -------------
 
-* `DELETE /scenarios/1.json` will delete the scenario specified and return `204 No Content` if that was successful. If the user does not have access to delete the scenario, you'll see `403 Forbidden`.
+* `DELETE /scenarios/17cc67093475061e3d95369d.json` will delete the scenario specified and return `204 No Content` if that was successful. If the user does not have access to delete the scenario, you'll see `403 Forbidden`.
 
 Note: At least one scenario must exist for a company, so an attempt to delete the last remaining scenario will return `403 Forbidden` as well.
