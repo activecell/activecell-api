@@ -72,21 +72,23 @@ API ready for use
 
 Company data:
 
-* [Companies](https://github.com/profitably/activecell-api/blob/master/sections/companies.md)
-* [Users](https://github.com/profitably/activecell-api/blob/master/sections/users.md)
-* [Scenarios](https://github.com/profitably/activecell-api/blob/master/sections/scenarios.md)
+* [Companies](https://github.com/profitably/activecell-api/blob/master/company/companies.md)
+* [Users](https://github.com/profitably/activecell-api/blob/master/company/users.md)
+* [Scenarios](https://github.com/profitably/activecell-api/blob/master/company/scenarios.md)
 
 Product data:
 
-* [Revenue streams](https://github.com/profitably/activecell-api/blob/master/sections/streams.md)
+* [Revenue streams](https://github.com/profitably/activecell-api/blob/master/product/streams.md)
 
 Customer data:
 
-* [Channels](https://github.com/profitably/activecell-api/blob/master/sections/channels.md)
+* [Channels](https://github.com/profitably/activecell-api/blob/master/customer/channels.md)
 
 Canonical data:
 
-* [Industries](https://github.com/profitably/activecell-api/blob/master/sections/industries.md)
+* [Periods](https://github.com/profitably/activecell-api/blob/master/canonical/periods.md)
+* [Industries](https://github.com/profitably/activecell-api/blob/master/canonical/industries.md)
+* [Countries](https://github.com/profitably/activecell-api/blob/master/canonical/countries.md)
 
 API still under development
 ---------------------------
