@@ -70,48 +70,57 @@ You can perform up to 500 requests per 10 second period from the same IP address
 API ready for use
 -----------------
 
-Company data:
-
-* [Companies](https://github.com/profitably/activecell-api/blob/master/company/companies.md)
-* [Users](https://github.com/profitably/activecell-api/blob/master/company/users.md)
-* [Scenarios](https://github.com/profitably/activecell-api/blob/master/company/scenarios.md)
-
-Product data:
-
-* [Revenue streams](https://github.com/profitably/activecell-api/blob/master/product/streams.md)
-
-Customer data:
-
-* [Channels](https://github.com/profitably/activecell-api/blob/master/customer/channels.md)
-
-Canonical data:
+Canonical data (get only):
 
 * [Periods](https://github.com/profitably/activecell-api/blob/master/canonical/periods.md)
 * [Industries](https://github.com/profitably/activecell-api/blob/master/canonical/industries.md)
 * [Countries](https://github.com/profitably/activecell-api/blob/master/canonical/countries.md)
+* [Employee activities]()
 
-API still under development
----------------------------
+Company data:
 
-* Products
-* Customers
-* Segments
-* Customer acquisition stages
-* Employees
-* Employee types
-* Vendors
-* Categories
-* Channel/segment mix
-* Financial history
-* Timesheet history
-* Conversion history
-* Unit revenue forecast
-* Unit cac forecast
-* Conversion forecast
-* Churn forecast
-* Staffing forecast
-* Employee cost forecast
-* Vendor cost forecast
+* [Users](https://github.com/profitably/activecell-api/blob/master/company/users.md)
+* [Companies](https://github.com/profitably/activecell-api/blob/master/company/companies.md)
+* [Scenarios](https://github.com/profitably/activecell-api/blob/master/company/scenarios.md)
+* [Accounts]()
+
+Product data:
+
+* [Products]()
+* [Revenue streams](https://github.com/profitably/activecell-api/blob/master/product/streams.md)
+
+Customer data:
+
+* [Customers]()
+* [Segments]()
+* [Channels (including segment mix)](https://github.com/profitably/activecell-api/blob/master/customer/channels.md)
+* [Customer acquisition stages]()
+
+Employee data:
+
+* [Employees]()
+* [Employee types (including activity mix)]()
+
+Vendor data:
+
+* [Vendors]()
+* [Categories]()
+
+History:
+
+* [Conversion history]()
+* [Financial history]()
+* [Timesheet history]()
+
+Forecasts:
+
+* [Unit revenue forecast]()
+* [Unit cac forecast]()
+* [Conversion forecast]()
+* [Churn forecast]()
+* [Staffing forecast]()
+* [Employee cost forecast]()
+* [Vendor cost forecast]()
 
 
 Help us make it better

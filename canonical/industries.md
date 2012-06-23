@@ -16,6 +16,10 @@ Fields
 
 * id [String] A BSON ObjectId Datatype identifier for the industry (system-defined)
 * name [String] The name of the industry
+* suggested_streams [Array] An Array of Strings with suggestions for revenue streams common in the industry
+* suggested_channels [Array] An Array of Strings with suggestions for channel common in the industry
+* suggested_segments [Array] An Array of Strings with suggestions for segments common in the industry
+* suggested_stages [Array] An Array of Strings with suggestions for customer acquisition stages common in the industry
 
 
 Get industries
@@ -38,4 +42,22 @@ Get industries
     "name": "Manufacturing"
   }
 ]
+```
+
+
+Get industry
+------------
+
+* `GET /industries/27cc67093475061e3d95369d.json` will return the specified industry and suggestions for streams, channels, segments, and stages.
+
+```json
+{
+  "id": "27cc67093475061e3d95369d",
+  "name": "Services",
+  "suggested_streams":["Professional services","Support","Product resale"],
+  "suggested_channels":["Direct sales","Referral","Search engine marketing","Events","Content marketing"],
+  "suggested_segments":["Platinum","Gold","Silver"],
+  "suggested_stages":["Prospect","Lead","Customer"]
+  ]
+}
 ```
