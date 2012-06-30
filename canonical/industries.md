@@ -14,12 +14,12 @@ Why select your industry from the list? We keep simple demographic data about ou
 Fields
 ------
 
-* id [String] A BSON ObjectId Datatype identifier for the industry (system-defined)
+* id [String] A system-defined BSON ObjectId identifier for the industry
 * name [String] The name of the industry
-* suggested_streams [Array] An Array of Strings with suggestions for revenue streams common in the industry
-* suggested_channels [Array] An Array of Strings with suggestions for channel common in the industry
-* suggested_segments [Array] An Array of Strings with suggestions for segments common in the industry
-* suggested_stages [Array] An Array of Strings with suggestions for customer acquisition stages common in the industry
+* suggested_streams [Array of Strings] Strings with suggestions for revenue streams common in the industry
+* suggested_channels [Array of Strings] Strings with suggestions for channel common in the industry
+* suggested_segments [Array of Strings] Strings with suggestions for segments common in the industry
+* suggested_stages [Array of Strings] Suggestions for customer acquisition stages common in the industry
 
 
 Get industries
@@ -58,6 +58,5 @@ Get industry
   "suggested_channels":["Direct sales","Referral","Search engine marketing","Events","Content marketing"],
   "suggested_segments":["Platinum","Gold","Silver"],
   "suggested_stages":["Prospect","Lead","Customer"]
-  ]
 }
 ```
