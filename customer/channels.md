@@ -1,5 +1,5 @@
 Customer Channels
-========
+=================
 
 > **Put. That coffee. Down.**  
 > **Coffee's for closers only.**

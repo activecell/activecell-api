@@ -9,7 +9,7 @@ Customer Segments
 
 Not all of your customers are stars. You may be losing money on some of your customers, sometimes on purpose and sometimes not. Some customers are in for the long haul, and some customers come and go. The important part is knowing which are which, and managing your business accordingly.
 
-
+Customer segmentation allows you to get to these answers quickly so that you can group and compare sets of customers with similar attributes based on whatever dimensions make the most sense to your business.
 
 
 Fields

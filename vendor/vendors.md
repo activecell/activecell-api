@@ -7,6 +7,9 @@ Vendors
 >
 > -Lock, Stock, and Two Smoking Barrels
 
+Vendors often position themselves as "partners," a key component of any healthy business, providing the goods and services it needs to succeed in the marketplace. Indeed, some vendors are great partners, but others can be wolves in sheep's clothing, sapping your resources without adding commensurate value.
+
+A little bit of analysis can go a long way to determining which of your vendors are helping you move your business forward, and which should be on the chopping block. 
 
 Fields
 ------
