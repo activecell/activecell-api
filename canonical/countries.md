@@ -14,7 +14,7 @@ Why select your country from the list? We keep simple demographic data about our
 Fields
 ------
 
-* id [String] A BSON ObjectId Datatype identifier for the country (system-defined)
+* id [String] A system-defined BSON ObjectId identifier for the country
 * name [String] The name of the country
 
 

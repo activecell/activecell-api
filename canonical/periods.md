@@ -14,7 +14,7 @@ We've made the editorial decision for simplicity that the monthly grain is where
 Fields
 ------
 
-* id [String] A BSON ObjectId Datatype identifier for the period (system-defined)
+* id [String] A system-defined BSON ObjectId identifier for the period
 * first_day [Date] The first day in the period
 
 

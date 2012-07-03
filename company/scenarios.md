@@ -13,7 +13,7 @@ Note: Historical data is not associated with a scenario. (There should only be o
 Fields
 ------
 
-* id [String] A BSON ObjectId Datatype identifier for the scenario (system-defined)
+* id [String] A system-defined BSON ObjectId identifier for the scenario
 * name [String] The name of the scenario (user-defined, though "Base" is the default first scenario)
 
 

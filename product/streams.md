@@ -1,8 +1,8 @@
 Revenue Streams
 ===============
 
-> **In this country, you gotta make the money first.
-> Then when you get the money, you get the power. 
+> **In this country, you gotta make the money first.  
+> Then when you get the money, you get the power.  
 > Then when you get the power, then you get the women.**
 >
 > -Scarface
@@ -15,7 +15,7 @@ For users who connect to QuickBooks, all income accounts will be added as revenu
 Fields
 ------
 
-* id [String] A BSON ObjectId Datatype identifier for the revenue stream (system-defined)
+* id [String] A system-defined BSON ObjectId identifier for the revenue stream
 * name [String] The name of the stream (user-defined or imported from QuickBooks)
 
 

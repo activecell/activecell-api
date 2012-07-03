@@ -13,13 +13,13 @@ But for today, all reporting flows down from a given company, and the creation o
 Fields
 ------
 
-* id [String] A BSON ObjectId Datatype identifier for the channel (system-defined)
+* id [String] A system-defined BSON ObjectId identifier for the channel
 * name [String] The name of the company (user-defined or retrieved from QuickBooks)
 * subdomain [String] The subdomain to activecell.com used to access the company's data through the API and analysis through the application
-* country-id [String] A BSON ObjectId Datatype identifier for the company's origin country
+* country [Country] The company's origin country (see Get countries)
 * postal-code [String] A postal code used in concert with the country field for demographic purposes ("zip code" in the USA)
 * url [String] A link to the company's primary website
-* industry-id [String] A BSON ObjectId Datatype identifier for the company's industry
+* industry [String] The company's industry (see Get industries)
 
 
 Get companies
@@ -33,19 +33,31 @@ Get companies
     "id": "17cc67093475061e3d95369d",
     "name": "Sterling Cooper",
     "subdomain": "sterlingcooper",
-    "country-id": "27cc67093475061e3d95369d",
+    "country-id": {
+      "id":"27cc67093475061e3d95369d",
+      "name":"United States"
+    }
     "postal-code": "10010",
     "url": "sterlingcooper.com",
-    "industry-id": "37cc67093475061e3d95369d"
+    "industry": {
+      "id":"37cc67093475061e3d95369d",
+      "name":"Professional Services"
+    }
   },
   {
     "id": "47cc67093475061e3d95369d",
     "name": "Sterling Cooper Draper Pryce",
     "subdomain": "scdp",
-    "country-id": "27cc67093475061e3d95369d",
+    "country-id": {
+      "id":"27cc67093475061e3d95369d",
+      "name":"United States"
+    }
     "postal-code": "10010",
     "url": "sterlingcooperdraperpryce.com",
-    "industry-id": "37cc67093475061e3d95369d"
+    "industry": {
+      "id":"37cc67093475061e3d95369d",
+      "name":"Professional Services"
+    }
   }
 ]
 ```
@@ -60,10 +72,16 @@ Get company
   "id": "17cc67093475061e3d95369d",
   "name": "Sterling Cooper",
   "subdomain": "sterlingcooper",
-  "country-id": "27cc67093475061e3d95369d",
+  "country-id": {
+    "id":"27cc67093475061e3d95369d",
+    "name":"United States"
+  }
   "postal-code": "10010",
   "url": "sterlingcooper.com",
-  "industry-id": "37cc67093475061e3d95369d"
+  "industry": {
+    "id":"37cc67093475061e3d95369d",
+    "name":"Professional Services"
+  }
   "users": [
     {"id": "57cc67093475061e3d95369d", "name": "Don Draper", "email": "don.draper@sterlingcooper.com"},
     {"id": "67cc67093475061e3d95369d", "name": "Roger Sterling", "email": "roger.sterling@sterlingcooper.com"},

@@ -11,10 +11,10 @@ ActiveCell API access is authenticated to a specific user, and that user can vie
 Fields
 ------
 
-* id [String] A BSON ObjectId Datatype identifier for the user (system-defined)
+* id [String] A system-defined BSON ObjectId identifier for the user
 * name [String] The name of the user
-* email [String] The emaill address of the user
-* companies [Array] An array of companies to which the user has access (see Get companies)
+* email [String] The email address of the user
+* companies [Array of Companies] Companies to which the user has access (see Get companies)
 
 
 Get users
@@ -83,12 +83,19 @@ Create user
 
 ```json
 {
+  "id": "57cc67093475061e3d95369d"
+}
+```
+
+* To invite an existing user to the company, simply pass the existing user's id.
+
+```json
+{
   "name": "Peggy Olson",
   "email": "peggy.olson@sterlingcooper.com"
 }
 ```
 
-* To invite an existing user, simply pass the existing user's id.
 * To invite a new user to be associated with the company, provide the name and email, and an email will be sent to the email provided with a password create request
 * If the email provided corresponds to an existing user, the user will be added to the company without a password create request
 

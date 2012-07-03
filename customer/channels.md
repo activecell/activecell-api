@@ -1,7 +1,7 @@
-Channels
+Customer Channels
 ========
 
-> **Put. That coffee. Down.**
+> **Put. That coffee. Down.**  
 > **Coffee's for closers only.**
 >
 > -Glengarry Glen Ross
@@ -14,16 +14,16 @@ Fields
 
 Channel: 
 
-* id [String] A BSON ObjectId Datatype identifier for the channel (system-defined)
+* id [String] A system-defined BSON ObjectId identifier for the channel
 * name [String] The name of the channel (user-defined)
 * commission [Float] A percentage rate to be applied to revenue to calculate commission value
-** The value must be greater than or equal to 0 but _may_ be greater than 1.0
-** _Note: 20% should be represented as 0.2 rather than 20._
+  * The value must be greater than or equal to 0 but _may_ be greater than 1.0
+  * _Note: 20% should be represented as 0.2 rather than 20._
 * channel-segment mix [Array] An array of channel/segment mix line items (see below)
 
 Channel/segment mix:
 
-* segment_id [String] A BSON ObjectId Datatype identifier for the segment (system-defined)
+* segment_id [String] A system-defined BSON ObjectId identifier for the segment
 * distribution [Float] A percentage rate representing the share of inbound channel customers forecasted to the segment
 
 Business rules

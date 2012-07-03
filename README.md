@@ -1,7 +1,7 @@
 API documentation for ActiveCell
 ================================
 
-You can use this site to understand how to connect to the ActiveCell API. We use it ourselves, as a matter of fact, not only for our pet projects and to load up sample data...but indeed our backbone.js app itself uses the API exclusively to persist data. It's called dog-fooding, and we're all over it.
+You can use this site to understand how to connect to the ActiveCell API. We use it ourselves, as a matter of fact, not only for our pet projects and to load up sample data...but indeed our application itself uses the API exclusively to retrieve and persist data. It's called dog-fooding, and we're all over it.
 
 _Editor's note on **API documentation format**:_ This API documentation site draws heavily if not completely from [37signals API documentation](https://github.com/37signals/api). We feel they really got it right and that others should get their API documentation into such a simple and digestible format. Hat's off to the crew at 37signals. Thanks for the inspiration!
 
@@ -82,35 +82,37 @@ Company data:
 * [Users](https://github.com/profitably/activecell-api/blob/master/company/users.md)
 * [Companies](https://github.com/profitably/activecell-api/blob/master/company/companies.md)
 * [Scenarios](https://github.com/profitably/activecell-api/blob/master/company/scenarios.md)
-* [Accounts]()
+* [Accounts](https://github.com/profitably/activecell-api/blob/master/company/accounts.md)
 
 Product data:
 
-* [Products]()
+* [Products](https://github.com/profitably/activecell-api/blob/master/product/products.md)
 * [Revenue streams](https://github.com/profitably/activecell-api/blob/master/product/streams.md)
 
 Customer data:
 
-* [Customers]()
-* [Segments]()
+* [Customers](https://github.com/profitably/activecell-api/blob/master/customer/customers.md)
+* [Segments](https://github.com/profitably/activecell-api/blob/master/customer/segments.md)
 * [Channels (including segment mix)](https://github.com/profitably/activecell-api/blob/master/customer/channels.md)
-* [Customer acquisition stages]()
+* [Customer acquisition stages](https://github.com/profitably/activecell-api/blob/master/customer/stages.md)
 
 Employee data:
 
-* [Employees]()
-* [Employee types (including activity mix)]()
+* [Employees](https://github.com/profitably/activecell-api/blob/master/employee/employees.md)
+* [Employee types (including activity mix)](https://github.com/profitably/activecell-api/blob/master/employee/employee_types.md)
 
 Vendor data:
 
-* [Vendors]()
-* [Categories]()
+* [Vendors](https://github.com/profitably/activecell-api/blob/master/vendor/vendors.md)
+* [Categories](https://github.com/profitably/activecell-api/blob/master/vendor/categories.md)
 
 History:
 
 * [Conversion history]()
-* [Financial history]()
-* [Timesheet history]()
+* [Financial summary]()
+* [Financial transactions]()
+* [Timesheet summary]()
+* [Timesheet transactions]()
 
 Forecasts:
 
