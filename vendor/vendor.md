@@ -1,7 +1,8 @@
 Vendors
 =======
 
-> **Right. Let's sort the buyers from the spyers, the needy from the greedy, and those who trust me from the ones who don't.  
+> **Right.  
+> Let's sort the buyers from the spyers, the needy from the greedy, and those who trust me from the ones who don't.  
 > 'Cause if you can't see value here today, you're not up here shopping. You're up here shoplifting.**
 >
 > -Lock, Stock, and Two Smoking Barrels
@@ -10,115 +11,75 @@ Vendors
 Fields
 ------
 
-* id [String] A system-defined BSON ObjectId identifier for the customer
-* name [String] The name of the customer (user-defined or imported from QuickBooks)
-* channel [Channel] Optional: the customer channel to which the customer is assigned
-* segment [Segment] Optional: the customer segment to which the customer is assigned
+* id [String] A system-defined BSON ObjectId identifier for the vendor
+* name [String] The name of the vendor (user-defined or imported from QuickBooks)
 
 
-Get customers
+Get vendors
 ------------
 
-* `GET /customers.json` will return the all the customers for the company.
+* `GET /vendors.json` will return the all the vendors for the company.
 
 ```json
 [
   {
     "id": "17cc67093475061e3d95369d",
-    "name": "Lucky Strike",
-    "channel":{
-      "id":"47cc67093475061e3d95369d",
-      "name":"Content marketing"
-    },
-    "segment":{
-      "id":"57cc67093475061e3d95369d",
-      "name":"Platinum"
-    }
+    "name": "Big Media Co."
   },
   {
     "id": "27cc67093475061e3d95369d",
-    "name": "London Fog",
-    "channel":{
-      "id":"67cc67093475061e3d95369d",
-      "name":"Direct sales"
-    },
-    "segment":{
-      "id":"77cc67093475061e3d95369d",
-      "name":"Gold"
-    }
+    "name": "Madison Avenue Properties"
   },
   {
     "id": "37cc67093475061e3d95369d",
-    "name": "Unilever",
-    "channel":{
-      "id":"87cc67093475061e3d95369d",
-      "name":"Events"
-    },
-    "segment":{
-      "id":"97cc67093475061e3d95369d",
-      "name":"Silver"
-    }
+    "name": "Winston's Cigars"
   }
 ]
 ```
 
 
-Get customer
+Get vendor
 -----------
 
-* `GET /customers/17cc67093475061e3d95369d.json` will return the specified customer
+* `GET /vendors/17cc67093475061e3d95369d.json` will return the specified vendor
 
 ```json
 {
   "id": "17cc67093475061e3d95369d",
-  "name": "Lucky Strike",
-  "channel":{
-    "id":"47cc67093475061e3d95369d",
-    "name":"Content marketing"
-  },
-  "segment":{
-    "id":"57cc67093475061e3d95369d",
-    "name":"Platinum"
-  }
+  "name": "Big Media Co."
 }
 ```
 
 
-Create customer
+Create vendor
 --------------
 
-* `POST /customers.json` will create a new customer from the parameters passed.
+* `POST /vendors.json` will create a new vendor from the parameters passed.
 
 ```json
 {
-  "id": "17cc67093475061e3d95369d",
-  "name": "Lucky Strike",
-  "channel":{"id":"47cc67093475061e3d95369d"},
-  "segment":{"id":"57cc67093475061e3d95369d"}
+  "name": "Big Media Co."
 }
 ```
 
-This will return `201 Created`, with the location of the new customer in the `Location` header along with the current JSON representation of the customer if the creation was a success. See the **Get channel* endpoint for more info.
+This will return `201 Created`, with the location of the new vendor in the `Location` header along with the current JSON representation of the vendor if the creation was a success. See the **Get channel* endpoint for more info.
 
 
-Update customer
+Update vendor
 --------------
 
-* `PUT /customers/27cc67093475061e3d95369d.json` will update the customer from the parameters passed.
+* `PUT /vendors/27cc67093475061e3d95369d.json` will update the vendor from the parameters passed.
 
 ```json
 {
-  "id": "17cc67093475061e3d95369d",
-  "name": "Lucky Strike",
-  "channel":{"id":"47cc67093475061e3d95369d"},
-  "segment":{"id":"57cc67093475061e3d95369d"}
+  "name": "Small Media Co."
 }
 ```
 
-This will return `200 OK` if the update was a success, along with the current JSON representation of the customer in the response body. If the user does not have access to update the customer, you'll see `403 Forbidden`. See the **Get customer** endpoint for more info.
+This will return `200 OK` if the update was a success, along with the current JSON representation of the vendor in the response body. If the user does not have access to update the vendor, you'll see `403 Forbidden`. See the **Get vendor** endpoint for more info.
 
 
-Delete customer
+Delete vendor
 -------------
 
-* `DELETE /customers/27cc67093475061e3d95369d.json` will delete the customer specified and return `204 No Content` if that was successful. If the user does not have access to delete the customer, you'll see `403 Forbidden`.
+* `DELETE /vendors/27cc67093475061e3d95369d.json` will delete the vendor specified and return `204 No Content` if that was successful. If the user does not have access to delete the vendor, you'll see `403 Forbidden`.
