@@ -75,7 +75,7 @@ Canonical data (get only):
 * [Periods](https://github.com/profitably/activecell-api/blob/master/canonical/periods.md)
 * [Industries](https://github.com/profitably/activecell-api/blob/master/canonical/industries.md)
 * [Countries](https://github.com/profitably/activecell-api/blob/master/canonical/countries.md)
-* [Employee activities]()
+* [Employee activities](https://github.com/profitably/activecell-api/blob/master/canonical/employee_activities.md)
 
 Company data:
 
