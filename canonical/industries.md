@@ -16,9 +16,9 @@ Fields
 
 * id [String] A system-defined BSON ObjectId identifier for the industry
 * name [String] The name of the industry
-* suggested_streams [Array of Strings] Strings with suggestions for revenue streams common in the industry
-* suggested_channels [Array of Strings] Strings with suggestions for channel common in the industry
-* suggested_segments [Array of Strings] Strings with suggestions for segments common in the industry
+* suggested_streams [Array of Strings] Suggestions for revenue streams common in the industry
+* suggested_channels [Array of Strings] Suggestions for customer channels common in the industry
+* suggested_segments [Array of Strings] Suggestions for customer segments common in the industry
 * suggested_stages [Array of Strings] Suggestions for customer acquisition stages common in the industry
 
 

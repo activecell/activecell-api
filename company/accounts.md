@@ -24,7 +24,7 @@ Fields
 * balance\_as\_of [Date] Date for which the current_balance field is valid (close of business)
 * is_active [Boolean] A flag to specify if the account is still active
 
-Valid account types: 
+**Valid account types: **
 
 * 'Asset'
 * 'Liability'

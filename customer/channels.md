@@ -12,7 +12,7 @@ Channels are sources of customers. Informal channels such as "Word of Mouth" sho
 Fields
 ------
 
-Channel: 
+**Channel:**
 
 * id [String] A system-defined BSON ObjectId identifier for the channel
 * name [String] The name of the channel (user-defined)
@@ -21,7 +21,7 @@ Channel:
   * _Note: 20% should be represented as 0.2 rather than 20._
 * channel-segment mix [Array] An array of channel/segment mix line items (see below)
 
-Channel/segment mix:
+**Channel/segment mix:**
 
 * segment_id [String] A system-defined BSON ObjectId identifier for the segment
 * distribution [Float] A percentage rate representing the share of inbound channel customers forecasted to the segment

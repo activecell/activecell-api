@@ -33,10 +33,10 @@ Get companies
     "id": "17cc67093475061e3d95369d",
     "name": "Sterling Cooper",
     "subdomain": "sterlingcooper",
-    "country-id": {
+    "country": {
       "id":"27cc67093475061e3d95369d",
       "name":"United States"
-    }
+    },
     "postal-code": "10010",
     "url": "sterlingcooper.com",
     "industry": {
@@ -48,10 +48,10 @@ Get companies
     "id": "47cc67093475061e3d95369d",
     "name": "Sterling Cooper Draper Pryce",
     "subdomain": "scdp",
-    "country-id": {
+    "country": {
       "id":"27cc67093475061e3d95369d",
       "name":"United States"
-    }
+    },
     "postal-code": "10010",
     "url": "sterlingcooperdraperpryce.com",
     "industry": {
@@ -72,16 +72,16 @@ Get company
   "id": "17cc67093475061e3d95369d",
   "name": "Sterling Cooper",
   "subdomain": "sterlingcooper",
-  "country-id": {
+  "country": {
     "id":"27cc67093475061e3d95369d",
     "name":"United States"
-  }
+  },
   "postal-code": "10010",
   "url": "sterlingcooper.com",
   "industry": {
     "id":"37cc67093475061e3d95369d",
     "name":"Professional Services"
-  }
+  },
   "users": [
     {"id": "57cc67093475061e3d95369d", "name": "Don Draper", "email": "don.draper@sterlingcooper.com"},
     {"id": "67cc67093475061e3d95369d", "name": "Roger Sterling", "email": "roger.sterling@sterlingcooper.com"},
@@ -102,10 +102,10 @@ _Note: In the absence of a company-specific subdomain, requests may be made to a
 {
   "name": "Sterling Cooper Draper Pryce",
   "subdomain": "scdp",
-	"country-id": "27cc67093475061e3d95369d",
+	"country": {"id":"27cc67093475061e3d95369d"},
 	"postal-code": "10010",
 	"url": "sterlingcooperdraperpryce.com",
-	"industry-id": "37cc67093475061e3d95369d"
+	"industry": {"id":"37cc67093475061e3d95369d"}
 	"users": [
 		{"id": "67cc67093475061e3d95369d"},
 	  {"name": "Don Draper", "email": "don.draper@sterlingcooper.com", "password": "reallyWhitman"},
@@ -130,10 +130,10 @@ Update channel
 {
   "name": "Sterling Cooper Draper Pryce",
   "subdomain": "scdp",
-  "country-id": "27cc67093475061e3d95369d",
+  "country": {"id":"27cc67093475061e3d95369d"},
   "postal-code": "10010",
   "url": "sterlingcooperdraperpryce.com",
-  "industry-id": "37cc67093475061e3d95369d"
+  "industry": {"id":"37cc67093475061e3d95369d"}
 }
 ```
 

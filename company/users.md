@@ -54,22 +54,34 @@ Get user
 	"email": "don.draper@sterlingcooper.com",
 	"companies":[
     {
-      "id": "47cc67093475061e3d95369d",
+      "id": "17cc67093475061e3d95369d",
       "name": "Sterling Cooper",
       "subdomain": "sterlingcooper",
-      "country-id": "67cc67093475061e3d95369d",
+      "country": {
+        "id":"27cc67093475061e3d95369d",
+        "name":"United States"
+      },
       "postal-code": "10010",
       "url": "sterlingcooper.com",
-      "industry-id": "77cc67093475061e3d95369d"
+      "industry": {
+        "id":"37cc67093475061e3d95369d",
+        "name":"Professional Services"
+      }
     },
     {
-      "id": "57cc67093475061e3d95369d",
+      "id": "47cc67093475061e3d95369d",
       "name": "Sterling Cooper Draper Pryce",
       "subdomain": "scdp",
-      "country-id": "67cc67093475061e3d95369d",
+      "country": {
+        "id":"27cc67093475061e3d95369d",
+        "name":"United States"
+      },
       "postal-code": "10010",
       "url": "sterlingcooperdraperpryce.com",
-      "industry-id": "77cc67093475061e3d95369d"
+      "industry": {
+        "id":"37cc67093475061e3d95369d",
+        "name":"Professional Services"
+      }
     }
   ]
 }
