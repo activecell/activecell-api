@@ -16,26 +16,30 @@ Fields
 
 * id [String] A system-defined BSON ObjectId identifier for the country
 * name [String] The name of the country
+* short_name [String] An acronym for the name of the country
 
 
 Get countries
 ------------
 
-* `GET /countries.json` will return our canonical list of countries. There is no pagination because we curate the list and keep in short.
+* `GET /api/v1/countries.json` will return our canonical list of countries. There is no pagination because we curate the list and keep in short.
 
 ```json
 [
   {
     "id": "17cc67093475061e3d95369d",
-    "name": "United States"
+    "name": "United States",
+    "short_name": "US"
   },
   {
     "id": "27cc67093475061e3d95369d",
-    "name": "Canada"
+    "name": "Canada",
+    "short_name": "CA"
   },
   {
     "id": "37cc67093475061e3d95369d",
-    "name": "United Kingdom"
+    "name": "United Kingdom",
+    "short_name": "GB"
   }
 ]
 ```
