@@ -21,7 +21,7 @@ Fields
 Get periods
 -----------
 
-* `GET /periods.json` will return our canonical list of periods. There is no pagination because we curate the list.
+* `GET /api/v1/periods.json` will return our canonical list of periods. There is no pagination because we curate the list.
 
 ```json
 [
