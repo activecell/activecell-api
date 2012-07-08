@@ -95,24 +95,11 @@ Create user
 
 ```json
 {
-  "id": "57cc67093475061e3d95369d"
+  "email": "new@user.com",
+  "password": "secret",
+  "passowrd_confirmation": "secret"
 }
 ```
-
-* To invite an existing user to the company, simply pass the existing user's id.
-
-```json
-{
-  "name": "Peggy Olson",
-  "email": "peggy.olson@sterlingcooper.com"
-}
-```
-
-* To invite a new user to be associated with the company, provide the name and email, and an email will be sent to the email provided with a password create request
-* If the email provided corresponds to an existing user, the user will be added to the company without a password create request
-
-This will return `201 Created`, with the location of the new user in the `Location` header along with the current JSON representation of the user if the creation was a success. See the **Get user* endpoint for more info.
-
 
 Update user
 --------------

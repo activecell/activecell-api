@@ -146,3 +146,30 @@ Delete company
 -------------
 
 * `DELETE /companies/17cc67093475061e3d95369d.json` will delete the company specified and return `204 No Content` if that was successful. If the user does not have access to delete the company, you'll see `403 Forbidden`.
+
+Intive users
+------------
+
+* `PUT /api/v1/companies/17cc67093475061e3d95369d/invite_user.json` will invite an user with given email address to the company
+
+```json
+{
+  "user": {
+    "email": "user@to.invite.com"
+  }
+}
+```
+
+Remove user from the company
+----------------------------
+
+* `DELETE /api/v1/companies/17cc67093475061e3d95369d/remove_user.json` will remove an user with given email address from the company
+
+```json
+{
+  "user": {
+    "email": "user@to.remove.com"
+  }
+}
+```
+
