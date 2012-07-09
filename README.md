@@ -117,13 +117,12 @@ History:
 
 Forecasts:
 
-* [Unit revenue forecast]()
-* [Unit cac forecast]()
-* [Conversion forecast]()
-* [Churn forecast]()
-* [Staffing forecast]()
-* [Employee cost forecast]()
-* [Vendor cost forecast]()
+* [Unit revenue forecast](https://github.com/profitably/activecell-api/blob/master/forecast/unit_rev_forecast.md)
+* [Unit cac forecast](https://github.com/profitably/activecell-api/blob/master/forecast/unit_cac_forecast.md)
+* [Conversion forecast](https://github.com/profitably/activecell-api/blob/master/forecast/conversion_forecast.md)
+* [Churn forecast](https://github.com/profitably/activecell-api/blob/master/forecast/churn_forecast.md)
+* [Staffing forecast](https://github.com/profitably/activecell-api/blob/master/forecast/staffing_forecast.md)
+* [Expense forecast](https://github.com/profitably/activecell-api/blob/master/forecast/expense_forecast.md)
 
 
 Help us make it better

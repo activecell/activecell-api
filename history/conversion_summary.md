@@ -84,11 +84,10 @@ Aleksey: Alternatively, we could send and receive Array JSON:
 Update conversion summary
 -------------------------
 
-* `PUT /conversion_summary.json` will update the conversion history from the parameters passed.
+* `PUT /conversion_summary/17cc67093475061e3d95369d.json` will update the conversion history from the parameters passed.
 
 ```json
 {
-  "id": "17cc67093475061e3d95369d",
   "customer_volume": 49
 }
 ```
