@@ -1,11 +1,9 @@
 Customer Segments
 =================
 
-> **This job would be great if it weren't for the $&@^#@ customers.**
-> **Which ones?**
-> **All of them.**
+> **If talk was money, Doc, you'd be the best customer I got.**
 >
-> -Clerks
+> -Stagecoach
 
 Not all of your customers are stars. You may be losing money on some of your customers, sometimes on purpose and sometimes not. Some customers are in for the long haul, and some customers come and go. The important part is knowing which are which, and managing your business accordingly.
 

@@ -1,12 +1,11 @@
 Customers
 ========
 
-> 
-> 
+> **This job would be great if it weren't for the $&@^#@ customers.**
+> **Which ones?**
+> **All of them.**
 >
-> -Lock, Stock, and Two Smoking Barrels 
-
-
+> -Clerks
 
 
 Fields
