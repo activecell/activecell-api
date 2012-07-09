@@ -108,11 +108,12 @@ Vendor data:
 
 History:
 
-* [Conversion history]()
-* [Financial summary]()
-* [Financial transactions]()
-* [Timesheet summary]()
-* [Timesheet transactions]()
+* [Conversion summary](https://github.com/profitably/activecell-api/blob/master/history/conversion_summary.md)
+* [Financial summary](https://github.com/profitably/activecell-api/blob/master/history/financial_summary.md)
+* [Financial transactions](https://github.com/profitably/activecell-api/blob/master/history/financial_txns.md)
+* [Timesheet summary](https://github.com/profitably/activecell-api/blob/master/history/timesheet_summary.md)
+* [Timesheet transactions](https://github.com/profitably/activecell-api/blob/master/history/timesheet_txns.md)
+* [Raw document](https://github.com/profitably/activecell-api/blob/master/history/document.md)
 
 Forecasts:
 
