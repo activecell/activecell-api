@@ -22,7 +22,7 @@ Fields
 * fixed_delta [Integer] The change (positive or negative) in the number of employees planned for that employee type in that period. Valid if occurrence is Monthly, Annually, or Fixed.
 * revenue_threshold [Integer] The level of revenue corresponding to 1 employee, in USD converted to cents (divided by 100), if occurrence is 'Revenue Threshold'
 
-**Valid occurrence types: **
+**Valid occurrence types:**
 
 * '**Monthly**' indicates that the employee count for that type will change regularly each month by a fixed number
 * '**Annually**' indicates that the employee count for that type will change regularly each year by a fixed number

@@ -1,7 +1,7 @@
 Employee activities
 ===================
 
-> ** I found that there were these incredibly great people at doing certain things, and you couldn't replace one of these people with 50 average people. They could just do stuff that no number of average people could do.**
+> **I found that there were these incredibly great people at doing certain things, and you couldn't replace one of these people with 50 average people. They could just do stuff that no number of average people could do.**
 >
 > - Steve Jobs
 

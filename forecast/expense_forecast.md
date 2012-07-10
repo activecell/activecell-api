@@ -23,7 +23,7 @@ Fields
 * fixed_cost [Integer] The fixed amount of the expense, in USD converted to cents (divided by 100). Valid if occurrence is Monthly, Annually, or Fixed.
 * percent_revenue [Decimal] The percentage of revenue to use for calculating the expense if occurrence is 'Revenue Percent'
 
-**Valid occurrence types: **
+**Valid occurrence types:**
 
 * '**Monthly**' indicates that the category will incur a fixed cost each month
 * '**Annually**' indicates that the category will incur a fixed cost each year
