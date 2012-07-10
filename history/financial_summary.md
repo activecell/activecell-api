@@ -21,46 +21,11 @@ Fields
 * vendor_id [String] A system-defined BSON ObjectId identifier for the vendor
 * amount_cents [Integer] The aggregated amount, in USD converted to cents (divided by 100)
 
-Note for Aleksey: Does it make sense to consider sending Array JSON vs Verbose JSON for potentially large feeds like this? Let's discuss...
 
 Get financial summary
 ---------------------
 
 * `GET /financial_summary.json` will return an aggregated summary of financial transactions for the company in the application's date range scope.
-
-```json
-[
-  {
-    "period_id": "17cc67093475061e3d95369d",
-    "account_id": "27cc67093475061e3d95369d",
-    "product_id": "37cc67093475061e3d95369d",
-    "customer_id": "47cc67093475061e3d95369d",
-    "employee_id": "57cc67093475061e3d95369d",
-    "vendor_id": "67cc67093475061e3d95369d",
-    "amount_cents": 10000
-  },
-  {
-    "period_id": "77cc67093475061e3d95369d",
-    "account_id": "27cc67093475061e3d95369d",
-    "product_id": "37cc67093475061e3d95369d",
-    "customer_id": "47cc67093475061e3d95369d",
-    "employee_id": "57cc67093475061e3d95369d",
-    "vendor_id": "67cc67093475061e3d95369d",
-    "amount_cents": 20000
-  },
-  {
-    "period_id": "87cc67093475061e3d95369d",
-    "account_id": "27cc67093475061e3d95369d",
-    "product_id": "37cc67093475061e3d95369d",
-    "customer_id": "47cc67093475061e3d95369d",
-    "employee_id": "57cc67093475061e3d95369d",
-    "vendor_id": "67cc67093475061e3d95369d",
-    "amount_cents": 30000
-  }
-]
-```
-
-Aleksey: Alternatively, we could send and receive Array JSON:
 
 ```json
 [
@@ -94,3 +59,4 @@ Aleksey: Alternatively, we could send and receive Array JSON:
 ]
 ```
 
+**Critical JSON Array note:** Due to the potential size of these datasets, data is transmitted as a JSON Array rather than the traditional "Verbose" JSON featured throughout most of the API. The order of the fields reflects the order in the "Fields" section of this document.

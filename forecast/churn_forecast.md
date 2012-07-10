@@ -19,40 +19,11 @@ Fields
 * segment_id [String] A system-defined BSON ObjectId identifier for the segment
 * churn_forecast [Integer] The planned customer churn for that segment and period
 
-Note for Aleksey: Does it make sense to consider sending Array JSON vs Verbose JSON for potentially large feeds like this? Let's discuss...
 
 Get churn forecast
 ----------------------
 
 * `GET /churn_forecast.json` will return the churn forecast for the company in the application's date range scope.
-
-```json
-[
-  {
-    "id": "17cc67093475061e3d95369d",
-    "scenario_id": "27cc67093475061e3d95369d",
-    "period_id": "37cc67093475061e3d95369d",
-    "segment_id": "57cc67093475061e3d95369d",
-    "churn_forecast": 72
-  },
-  {
-    "id": "67cc67093475061e3d95369d",
-    "scenario_id": "77cc67093475061e3d95369d",
-    "period_id": "37cc67093475061e3d95369d",
-    "segment_id": "57cc67093475061e3d95369d",
-    "churn_forecast": 91
-  },
-  {
-    "id": "87cc67093475061e3d95369d",
-    "scenario_id": "97cc67093475061e3d95369d",
-    "period_id": "37cc67093475061e3d95369d",
-    "segment_id": "57cc67093475061e3d95369d",
-    "churn_forecast": 32
-  }
-]
-```
-
-Aleksey: Alternatively, we could send and receive Array JSON:
 
 ```json
 [
@@ -79,6 +50,8 @@ Aleksey: Alternatively, we could send and receive Array JSON:
   ]
 ]
 ```
+
+**Critical JSON Array note:** Due to the potential size of these datasets, data is transmitted as a JSON Array rather than the traditional "Verbose" JSON featured throughout most of the API. The order of the fields reflects the order in the "Fields" section of this document.
 
 
 Update churn forecast
