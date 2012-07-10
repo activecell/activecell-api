@@ -5,7 +5,7 @@ Unit Customer Acquisition Cost Forecast
 >
 > -Source
 
-Unit economics are a key component of planning and analysis. Unit customer acquisition cost, put simply, is how much expense you can expect to incur to attract a single customer. Across each of your customer channels, what are the various types of costs across different cost categories? It is this unit CAC planning, coupled with the customer volume forecast, that builds a smart customer acquisition budget and an optimized channel mix, step by step.
+Unit economics are a key component of planning and analysis. Unit customer acquisition cost, put simply, is how much expense you can expect to incur to attract a single customer. Across each of your customer channels, you can plan for the various types of costs across different cost categories. It is this unit CAC planning, coupled with the customer volume forecast, that builds a smart customer acquisition budget and an optimized channel mix, step by step.
 
 As with all forecasts, the forecast assumptions are tied to a scenario. Dollar values are expressed as integers in cents, so be certain to convert to dollars by dividing by 100.
 
@@ -32,21 +32,21 @@ Get unit CAC forecast
     "scenario_id": "27cc67093475061e3d95369d",
     "category_id": "37cc67093475061e3d95369d",
     "channel_id": "57cc67093475061e3d95369d",
-    "unit\_cac_forecast": 4999
+    "unit_cac_forecast": 4999
   },
   {
     "id": "67cc67093475061e3d95369d",
     "scenario_id": "77cc67093475061e3d95369d",
     "category_id": "37cc67093475061e3d95369d",
     "channel_id": "57cc67093475061e3d95369d",
-    "unit\_cac_forecast": 9999
+    "unit_cac_forecast": 9999
   },
   {
     "id": "87cc67093475061e3d95369d",
     "scenario_id": "97cc67093475061e3d95369d",
     "category_id": "37cc67093475061e3d95369d",
     "channel_id": "57cc67093475061e3d95369d",
-    "unit\_cac_forecast": 14999
+    "unit_cac_forecast": 14999
   }
 ]
 ```
@@ -59,7 +59,7 @@ Update unit CAC forecast
 
 ```json
 {
-  "unit\_cac_forecast": 49
+  "unit_cac_forecast": 49
 }
 ```
 

@@ -25,10 +25,8 @@ Fields
 **Valid occurrence types:**
 
 * '**Monthly**' indicates that the employee count for that type will change regularly each month by a fixed number
-* '**Annually**' indicates that the employee count for that type will change regularly each year by a fixed number
-  * If Annually, occurrence_month must be populated to specify in which month the annual event occurs
-* '**Fixed**' indicates that the employee count for that type will change by a fixed number within a fixed period
-  * If Fixed, occurrence_period must be populated to specify in which period the one-time event occurs
+* '**Annually**' indicates that the employee count for that type will change regularly each year by a fixed number (in this case, occurrence_month must be populated to specify in which month the annual event occurs)
+* '**Fixed**' indicates that the employee count for that type will change by a fixed number within a fixed period (in this case, occurrence_period must be populated to specify in which period the one-time event occurs)
 * '**Revenue Threshold**' indicates that for every _$x_ in revenue, 1 employee of that type will be required, and the staffing forecast scales automatically as the revenue forecast shifts  
 
 
