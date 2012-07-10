@@ -5,7 +5,7 @@ Unit Customer Acquisition Cost Forecast
 >
 > -Source
 
-Unit economics are a key component of planning and analysis. Put simply, how much expense can you expect to incur to attract a single customer? Across each of your customer channels, what are the various types of costs across different cost categories? It is this unit CAC planning, coupled with the customer volume forecast, that builds a smart customer acquisition budget and an optimized channel mix, step by step.
+Unit economics are a key component of planning and analysis. Unit customer acquisition cost, put simply, is how much expense you can expect to incur to attract a single customer. Across each of your customer channels, what are the various types of costs across different cost categories? It is this unit CAC planning, coupled with the customer volume forecast, that builds a smart customer acquisition budget and an optimized channel mix, step by step.
 
 As with all forecasts, the forecast assumptions are tied to a scenario. Dollar values are expressed as integers in cents, so be certain to convert to dollars by dividing by 100.
 

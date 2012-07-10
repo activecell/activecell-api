@@ -5,7 +5,7 @@ Unit Revenue Forecast
 >
 > -Source
 
-Unit economics are a key component of planning and analysis. Put simply, how much revenue can you expect to earn from a single customer per period? Across each of your customer segments, what is the mix of revenue across your various revenue streams? It is this unit revenue planning, coupled with the customer volume forecast, that builds a smart forecast for revenue, building block by building block.
+Unit economics are a key component of planning and analysis. A unit revenue forecast, put simply, is how much revenue you can expect to earn from a single customer per period. Across each of your customer segments, what is the mix of revenue across your various revenue streams? It is this unit revenue planning, coupled with the customer volume forecast, that builds a smart forecast for revenue, building block by building block.
 
 As with all forecasts, the forecast assumptions are tied to a scenario. Dollar values are expressed as integers in cents, so be certain to convert to dollars by dividing by 100.
 
