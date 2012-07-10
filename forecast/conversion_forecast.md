@@ -90,7 +90,7 @@ Aleksey: Alternatively, we could send and receive Array JSON:
 ```
 
 
-Update conversion summary
+Update conversion forecast
 -------------------------
 
 * `PUT /conversion_forecast/17cc67093475061e3d95369d.json` will update the conversion history from the parameters passed.
@@ -104,7 +104,7 @@ Update conversion summary
 This will return `200 OK` if the update was a success, along with the current JSON representation of the customer in the response body. If the user does not have access to update the customer, you'll see `403 Forbidden`. See the **Get customer** endpoint for more info.
 
 
-Create and delete conversion summary
+Create and delete conversion forecast
 -------------------------------------
 
 There is no mechanism for creating and destroying conversion records. A complete matrix is maintained automatically, and until a history is entered, the conversion rate is 0. To "create" a record, simply find it and then update it from 0 to whatever the appropriate value is.
