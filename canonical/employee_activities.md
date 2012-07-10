@@ -19,7 +19,7 @@ Fields
 Get employee activities
 ------------
 
-* `GET /employee-activities.json` will return our canonical list of industries. There is no pagination because we curate the list and keep in short.
+* `GET /employee-activities.json` will return our canonical list of employee activities. There is no pagination because we curate the list and keep in short.
 
 ```json
 [
