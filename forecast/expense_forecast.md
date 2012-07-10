@@ -26,10 +26,8 @@ Fields
 **Valid occurrence types:**
 
 * '**Monthly**' indicates that the category will incur a fixed cost each month
-* '**Annually**' indicates that the category will incur a fixed cost each year
-  * If Annually, occurrence_month must be populated to specify in which month the annual charge occurs
-* '**Fixed**' indicates that the category will incur a one-time fixed cost within a fixed period
-  * If Fixed, occurrence_period must be populated to specify in which period the one-time charge occurs
+* '**Annually**' indicates that the category will incur a fixed cost each year (in this case, occurrence_month must be populated to specify in which month the annual charge occurs)
+* '**Fixed**' indicates that the category will incur a one-time fixed cost within a fixed period (in this case, occurrence_period must be populated to specify in which period the one-time charge occurs)
 * '**Revenue Percent**' indicates that the category will incur a cost scaling with revenue at a given percent. As the revenue forecast shifts, the expense forecast scales with it.
 * '**Employee Count**' indicates that the category will incur a fixed cost per employee scaling with overall employee count. As the staffing forecast shifts, the expense forecast scales with it
 

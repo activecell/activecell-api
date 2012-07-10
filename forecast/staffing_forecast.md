@@ -40,14 +40,14 @@ Get staffing forecasts
   {
     "id": "17cc67093475061e3d95369d",
     "scenario_id": "27cc67093475061e3d95369d",
-    "employee\_type_id": "37cc67093475061e3d95369d",
+    "employee_type_id": "37cc67093475061e3d95369d",
     "occurrence": "Monthly",
     "fixed_delta":1
   },
   {
     "id": "47cc67093475061e3d95369d",
     "scenario_id": "27cc67093475061e3d95369d",
-    "employee\_type_id": "57cc67093475061e3d95369d",
+    "employee_type_id": "57cc67093475061e3d95369d",
     "occurrence": "Annually",
     "occurrence_month": 1,
     "fixed_delta":2
@@ -55,7 +55,7 @@ Get staffing forecasts
   {
     "id": "67cc67093475061e3d95369d",
     "scenario_id": "27cc67093475061e3d95369d",
-    "employee\_type_id": "77cc67093475061e3d95369d",
+    "employee_type_id": "77cc67093475061e3d95369d",
     "occurrence": "Fixed",
     "occurrence_period": "87cc67093475061e3d95369d",
     "fixed_delta":3
@@ -63,7 +63,7 @@ Get staffing forecasts
   {
     "id": "97cc67093475061e3d95369d",
     "scenario_id": "27cc67093475061e3d95369d",
-    "employee\_type_id": "07cc67093475061e3d95369d",
+    "employee_type_id": "07cc67093475061e3d95369d",
     "occurrence": "Revenue Threshold",
     "revenue_threshold": 10000000
   }
@@ -80,7 +80,7 @@ Get staffing forecast
 {
   "id": "17cc67093475061e3d95369d",
   "scenario_id": "27cc67093475061e3d95369d",
-  "employee\_type_id": "37cc67093475061e3d95369d",
+  "employee_type_id": "37cc67093475061e3d95369d",
   "occurrence": "Monthly",
   "fixed_delta":1
 }
@@ -95,7 +95,7 @@ Create staffing forecast
 ```json
 {
   "scenario_id": "27cc67093475061e3d95369d",
-  "employee\_type_id": "37cc67093475061e3d95369d",
+  "employee_type_id": "37cc67093475061e3d95369d",
   "occurrence": "Monthly",
   "fixed_delta":1
 }
@@ -112,7 +112,7 @@ Update staffing forecast
 ```json
 {
   "scenario_id": "27cc67093475061e3d95369d",
-  "employee\_type_id": "07cc67093475061e3d95369d",
+  "employee_type_id": "07cc67093475061e3d95369d",
   "occurrence": "Revenue Threshold",
   "revenue_threshold": 10000000
 }
