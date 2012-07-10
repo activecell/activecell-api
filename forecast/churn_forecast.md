@@ -84,7 +84,7 @@ Aleksey: Alternatively, we could send and receive Array JSON:
 Update churn forecast
 -------------------------
 
-* `PUT /churn_forecast/17cc67093475061e3d95369d.json` will update the churn history from the parameters passed.
+* `PUT /churn_forecast/17cc67093475061e3d95369d.json` will update the churn forecast from the parameters passed.
 
 ```json
 {
