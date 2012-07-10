@@ -10,8 +10,8 @@ Your company's conversion history is a record of how many potential customers yo
 Currently, this data is entered manually through the app or supplied using this API, but in the future connectivity to applications with conversion data--such as salesforce.com or google analytics--will be built and automated.
 
 
-Fields
-------
+Fields (order of fields is prescriptive for JSON Array)
+-------------------------------------------------------
 
 * id [String] A system-defined BSON ObjectId identifier for the conversion record
 * period_id [String] A system-defined BSON ObjectId identifier for the period

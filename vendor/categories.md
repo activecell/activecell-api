@@ -59,7 +59,7 @@ Create category
 }
 ```
 
-This will return `201 Created`, with the location of the new category in the `Location` header along with the current JSON representation of the category if the creation was a success. See the **Get category* endpoint for more info.
+This will return `201 Created`, with the location of the new category in the `Location` header along with the current JSON representation of the category if the creation was a success. See the **Get category** endpoint for more info.
 
 
 Update category

@@ -2,7 +2,7 @@ Industries
 ========
 
 > **If GM had kept up with technology like the computer industry has,
-> we would all be driving $25 cars that got 1000 MPG**
+> we would all be driving $25 cars that got 1000 MPG.**
 >
 > -Bill Gates
 

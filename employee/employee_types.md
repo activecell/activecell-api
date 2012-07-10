@@ -1,7 +1,8 @@
 Employee types
 ==============
 
-> **I realize that I'm the president of this company, the man that's responsible for everything that goes on here. So, I want to state, right now, that anything that happened is not my fault.**
+> **I realize that I'm the president of this company, the man that's responsible for everything that goes on here.  
+> So, I want to state, right now, that anything that happened is not my fault.**
 >
 > -How to Succeed in Business Without Really Trying
 
@@ -19,7 +20,7 @@ Fields
 Get employee types
 ------------
 
-* `GET /employee-types.json` will return the all the employee types for the company. There is no pagination because we currently limit companies to 50 employee types (more than 10 is rare!).
+* `GET /employee_types.json` will return the all the employee types for the company. There is no pagination because we currently limit companies to 50 employee types (more than 10 is rare!).
 
 ```json
 [
@@ -42,7 +43,7 @@ Get employee types
 Get employee type
 -----------
 
-* `GET /employee-types/17cc67093475061e3d95369d.json` will return the specified employee type and its forecast channel/segment mix
+* `GET /employee_types/17cc67093475061e3d95369d.json` will return the specified employee type and its forecast channel/segment mix
 
 ```json
 {
@@ -55,7 +56,7 @@ Get employee type
 Create employee type
 --------------
 
-* `POST /employee-types.json` will create a new employee type from the parameters passed.
+* `POST /employee_types.json` will create a new employee type from the parameters passed.
 
 ```json
 {
@@ -69,7 +70,7 @@ This will return `201 Created`, with the location of the new employee type in th
 Update employee type
 --------------
 
-* `PUT /employee-types/27cc67093475061e3d95369d.json` will update the employee type from the parameters passed.
+* `PUT /employee_types/27cc67093475061e3d95369d.json` will update the employee type from the parameters passed.
 
 ```json
 {
@@ -83,6 +84,6 @@ This will return `200 OK` if the update was a success, along with the current JS
 Delete employee type
 -------------
 
-* `DELETE /employee-types/27cc67093475061e3d95369d.json` will delete the employee type specified and return `204 No Content` if that was successful. If the user does not have access to delete the employee type, you'll see `403 Forbidden`.
+* `DELETE /employee_types/27cc67093475061e3d95369d.json` will delete the employee type specified and return `204 No Content` if that was successful. If the user does not have access to delete the employee type, you'll see `403 Forbidden`.
 
 Note: At least one employee type must exist for a company, so an attempt to delete the last remaining employee type will return `403 Forbidden` as well.

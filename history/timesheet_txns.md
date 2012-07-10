@@ -12,7 +12,9 @@ Your company's timesheet history may be either:
 
 In either case, the value of the historical data is paramount to evaluating the effectiveness of your investments in human capital.
 
-The timesheet transaction list is detailed record of individual transaction line items pulled from a timesheet system or imported through the API. Given the sheer volume of transactions possible and the size of each transaction, it is recommended that the aggregated timesheet summary be employed wherever possible and that the transaction history be filtered as granularly as possible when employed. Most transactions will not have all dimensions populated, and so blank (or "null") values are to be expected for some of these dimensions in each record supplied. Time is expressed simply in minutes. Where the source data has provided hours, these figures have been multiplied by 60.
+The timesheet transaction list is detailed record of individual transaction line items pulled from a timesheet system or imported through the API. Given the sheer volume of transactions possible and the size of each transaction, it is recommended that the aggregated timesheet summary be employed wherever possible and that the transaction history be filtered as granularly as possible when employed. Most transactions will not have all dimensions populated, and so blank (or "null") values are to be expected for some of these dimensions in each record supplied. 
+
+Time is expressed simply in minutes. Where the source data has provided hours, these figures have been multiplied by 60.
 
 
 Query parameters
@@ -24,8 +26,8 @@ Query parameters
 * e [String] A system-defined BSON ObjectId identifier for the employee
 
 
-Fields
-------
+Fields (order of fields is prescriptive for JSON Array)
+-------------------------------------------------------
 
 * id [String] A system-defined BSON ObjectId identifier for the timesheet transaction
 * period_id [String] A system-defined BSON ObjectId identifier for the period

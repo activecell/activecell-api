@@ -1,5 +1,5 @@
-Scenarios
-=========
+Accounts
+========
 
 > **Corporate Accounts Payable, Nina speaking. Just a moment.**
 >
@@ -24,7 +24,7 @@ Fields
 * balance\_as\_of [Date] Date for which the current_balance field is valid (close of business)
 * is_active [Boolean] A flag to specify if the account is still active
 
-**Valid account types: **
+**Valid account types:**
 
 * 'Asset'
 * 'Liability'
@@ -48,9 +48,9 @@ Get accounts
     "type":"Asset",
     "sub_type":"Bank",
     "account_number":"72613",
-    "current\_balance":10000000,
-    "current\_balance\_currency":"USD",
-    "balance\_as\_of":"2012-01-01",
+    "current_balance":10000000,
+    "current_balance_currency":"USD",
+    "balance_as_of":"2012-01-01",
     "is_active":true
   },
   {
@@ -77,7 +77,7 @@ Get accounts
 Get account
 -----------
 
-* `GET /accounts/17cc67093475061e3d95369d.json` will return the specified account and all of its forecast inputs
+* `GET /accounts/17cc67093475061e3d95369d.json` will return the specified account
 
 ```json
 {
@@ -86,9 +86,9 @@ Get account
   "type":"Asset",
   "sub_type":"Bank",
   "account_number":"72613",
-  "current\_balance":10000000,
-  "current\_balance\_currency":"USD",
-  "balance\_as\_of":"2012-01-01",
+  "current_balance":10000000,
+  "current_balance_currency":"USD",
+  "balance_as_of":"2012-01-01",
   "is_active":true
 }
 ```
@@ -105,14 +105,14 @@ Create account
   "type":"Asset",
   "sub_type":"Bank",
   "account_number":"72613",
-  "current\_balance":10000000,
-  "current\_balance\_currency":"USD",
-  "balance\_as\_of":"2012-01-01",
+  "current_balance":10000000,
+  "current_balance_currency":"USD",
+  "balance_as_of":"2012-01-01",
   "is_active":true
 }
 ```
 
-This will return `201 Created`, with the location of the new account in the `Location` header along with the current JSON representation of the account if the creation was a success. See the **Get account* endpoint for more info.
+This will return `201 Created`, with the location of the new account in the `Location` header along with the current JSON representation of the account if the creation was a success. See the **Get account** endpoint for more info.
 
 
 Update account
@@ -127,9 +127,9 @@ Update account
   "type":"Asset",
   "sub_type":"Bank",
   "account_number":"72613",
-  "current\_balance":10000000,
-  "current\_balance\_currency":"USD",
-  "balance\_as\_of":"2012-01-01",
+  "current_balance":10000000,
+  "current_balance_currency":"USD",
+  "balance_as_of":"2012-01-01",
   "is_active":true
 }
 ```

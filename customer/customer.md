@@ -1,8 +1,8 @@
 Customers
 ========
 
-> **This job would be great if it weren't for the $&@^#@ customers.**
-> **Which ones?**
+> **This job would be great if it weren't for the $&@^#@ customers.**  
+> **Which ones?**  
 > **All of them.**
 >
 > -Clerks
@@ -99,7 +99,7 @@ Create customer
 }
 ```
 
-This will return `201 Created`, with the location of the new customer in the `Location` header along with the current JSON representation of the customer if the creation was a success. See the **Get channel* endpoint for more info.
+This will return `201 Created`, with the location of the new customer in the `Location` header along with the current JSON representation of the customer if the creation was a success. See the **Get customer** endpoint for more info.
 
 
 Update customer

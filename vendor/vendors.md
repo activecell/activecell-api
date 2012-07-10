@@ -65,7 +65,7 @@ Create vendor
 }
 ```
 
-This will return `201 Created`, with the location of the new vendor in the `Location` header along with the current JSON representation of the vendor if the creation was a success. See the **Get channel* endpoint for more info.
+This will return `201 Created`, with the location of the new vendor in the `Location` header along with the current JSON representation of the vendor if the creation was a success. See the **Get vendor** endpoint for more info.
 
 
 Update vendor

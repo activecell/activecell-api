@@ -55,17 +55,17 @@ Get stream
 		{
 		  "scenario_id":"27cc67093475061e3d95369d", 
 		  "segment_id":"37cc67093475061e3d95369d", 
-		  "unit\_revenue_forecast":100
+		  "unit_revenue_forecast":100
 		},
 		{
 		  "scenario_id":"27cc67093475061e3d95369d", 
 		  "segment_id":"57cc67093475061e3d95369d", 
-		  "unit\_revenue_forecast":200
+		  "unit_revenue_forecast":200
 		  },
 		{
 		  "scenario_id":"27cc67093475061e3d95369d", 
 		  "segment_id":"77cc67093475061e3d95369d",
-		  "unit\_revenue_forecast":300
+		  "unit_revenue_forecast":300
 		}
 	]
 }
@@ -83,7 +83,7 @@ Create stream
 }
 ```
 
-This will return `201 Created`, with the location of the new stream in the `Location` header along with the current JSON representation of the stream if the creation was a success. See the **Get channel* endpoint for more info.
+This will return `201 Created`, with the location of the new stream in the `Location` header along with the current JSON representation of the stream if the creation was a success. See the **Get stream** endpoint for more info.
 
 
 Update stream

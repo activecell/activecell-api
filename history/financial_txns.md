@@ -20,8 +20,8 @@ Query parameters
 * v [String] A system-defined BSON ObjectId identifier for the vendor
 
 
-Fields
-------
+Fields (order of fields is prescriptive for JSON Array)
+-------------------------------------------------------
 
 * id [String] A system-defined BSON ObjectId identifier for the financial transaction
 * period_id [String] A system-defined BSON ObjectId identifier for the period

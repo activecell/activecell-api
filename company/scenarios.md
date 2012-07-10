@@ -50,25 +50,22 @@ Get scenario
   "id": "17cc67093475061e3d95369d",
   "name": "Base",
 	"unit revenue forecast":[
-		_See the **Get unit revenue forecast* endpoint for more info_
+		"_See the **Get unit revenue forecast** endpoint for more info_"
 	],
 	"unit cac forecast":[
-		_See the **Get unit cac forecast* endpoint for more info_
+		"_See the **Get unit cac forecast** endpoint for more info_"
 	],
 	"conversion forecast":[
-		_See the **Get conversion forecast* endpoint for more info_
+		"_See the **Get conversion forecast** endpoint for more info_"
 	],
 	"churn forecast":[
-		_See the **Get churn forecast* endpoint for more info_
+		"_See the **Get churn forecast** endpoint for more info_"
 	],
 	"staffing forecast":[
-		_See the **Get staffing forecast* endpoint for more info_
+		"_See the **Get staffing forecast** endpoint for more info_"
 	],
-	"employee cost forecast":[
-		_See the **Get employee cost forecast* endpoint for more info_
-	],
-	"vendor cost forecast":[
-		_See the **Get vendor cost forecast* endpoint for more info_
+	"expense forecast":[
+		"_See the **Get employee cost forecast** endpoint for more info_"
 	]
 }
 ```
@@ -83,25 +80,22 @@ Create scenario
 {
   "name": "Growth mode",
 	"unit revenue forecast":[
-		_See the **Update unit revenue forecast* endpoint for more info_
+		"_See the **Update unit revenue forecast** endpoint for more info_"
 	],
 	"unit cac forecast":[
-		_See the **Update unit cac forecast* endpoint for more info_
+		"_See the **Update unit cac forecast** endpoint for more info_"
 	],
 	"conversion forecast":[
-		_See the **Update conversion forecast* endpoint for more info_
+		"_See the **Update conversion forecast** endpoint for more info_"
 	],
 	"churn forecast":[
-		_See the **Update churn forecast* endpoint for more info_
+		"_See the **Update churn forecast** endpoint for more info_"
 	],
 	"staffing forecast":[
-		_See the **Update staffing forecast* endpoint for more info_
+		"_See the **Create staffing forecast** endpoint for more info_"
 	],
-	"employee cost forecast":[
-		_See the **Update employee cost forecast* endpoint for more info_
-	],
-	"vendor cost forecast":[
-		_See the **Update vendor cost forecast* endpoint for more info_
+	"expense forecast":[
+		"_See the **Create expense forecast** endpoint for more info_"
 	]
 }
 ```

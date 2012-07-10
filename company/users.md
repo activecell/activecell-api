@@ -5,7 +5,7 @@ Users
 >
 > -Tron
 
-ActiveCell API access is authenticated to a specific user, and that user can view user details for any company to which he/she has access. The processes of creating users and inviting new users to existing companies, however, is built into the companies model. See the **Create company* endpoint for more info.
+ActiveCell API access is authenticated to a specific user, and that user can view user details for any company to which he/she has access. The processes of creating users and inviting new users to existing companies, however, is built into the companies model. See the **Create company** endpoint for more info.
 
 
 Fields
@@ -27,17 +27,17 @@ Get users
   {
     "id": "17cc67093475061e3d95369d",
     "name": "Don Draper",
-		"email": "don.draper@sterlingcooper.com"
+    "email": "don.draper@sterlingcooper.com"
   },
   {
     "id": "27cc67093475061e3d95369d",
     "name": "Roger Sterling",
-		"email": "roger.sterling@sterlingcooper.com"
+    "email": "roger.sterling@sterlingcooper.com"
   },
   {
     "id": "37cc67093475061e3d95369d",
     "name": "Bert Cooper",
-		"email": "bert.cooper@sterlingcooper.com"
+    "email": "bert.cooper@sterlingcooper.com"
   }
 ]
 ```
@@ -51,8 +51,8 @@ Get user
 {
   "id": "17cc67093475061e3d95369d",
   "name": "Don Draper",
-	"email": "don.draper@sterlingcooper.com",
-	"companies":[
+  "email": "don.draper@sterlingcooper.com",
+  "companies":[
     {
       "id": "17cc67093475061e3d95369d",
       "name": "Sterling Cooper",
@@ -95,9 +95,10 @@ Create user
 
 ```json
 {
-  "email": "new@user.com",
+  "name": "Don Draper",
+  "email": "don.draper@sterlingcooper.com",
   "password": "secret",
-  "passowrd_confirmation": "secret"
+  "password_confirmation": "secret"
 }
 ```
 
@@ -112,6 +113,8 @@ Update user
 	"email": "roger.t.sterling@sterlingcooper.com"
 }
 ```
+
+Note: A user may only update her own record, and not the records of other users in companies to which she has access.
 
 This will return `200 OK` if the update was a success, along with the current JSON representation of the user in the response body. If the user does not have access to update the user, you'll see `403 Forbidden`. See the **Get user** endpoint for more info.
 

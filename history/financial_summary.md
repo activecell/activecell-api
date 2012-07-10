@@ -10,8 +10,8 @@ Your company's financial history is an immutable reality (or should be!) that is
 The financial summary is an aggregate of all the individual transactions that occur for a given period, account, product, customer, employee, and vendor. Most transactions will not have all dimensions populated, and so blank (or "null") values are to be expected for some of these dimensions in each record supplied. Dollar values are expressed as integers in cents, so be certain to convert to dollars by dividing by 100.
 
 
-Fields
-------
+Fields (order of fields is prescriptive for JSON Array)
+-------------------------------------------------------
 
 * period_id [String] A system-defined BSON ObjectId identifier for the period
 * account_id [String] A system-defined BSON ObjectId identifier for the account

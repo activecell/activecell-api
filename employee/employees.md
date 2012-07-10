@@ -78,12 +78,12 @@ Create employee
 
 ```json
 {
-  "name": "Roger Sterling"
+  "name": "Roger Sterling",
   "employee_type": {"id":"67cc67093475061e3d95369d"}
 }
 ```
 
-This will return `201 Created`, with the location of the new employee in the `Location` header along with the current JSON representation of the employee if the creation was a success. See the **Get channel* endpoint for more info.
+This will return `201 Created`, with the location of the new employee in the `Location` header along with the current JSON representation of the employee if the creation was a success. See the **Get employee** endpoint for more info.
 
 
 Update employee
@@ -93,7 +93,7 @@ Update employee
 
 ```json
 {
-  "name": "Roger Sterling"
+  "name": "Roger Sterling",
   "employee_type":{"id":"67cc67093475061e3d95369d"}
 }
 ```

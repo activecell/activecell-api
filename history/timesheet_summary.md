@@ -15,8 +15,8 @@ In either case, the value of the historical data is paramount to evaluating the 
 The timesheet summary is an aggregate of all the individual transactions that occur for a given period, activity, product, customer, and employee. Most transactions will not have all dimensions populated, and so blank (or "null") values are to be expected for some of these dimensions in each record supplied. Time is expressed simply in minutes. Where the source data has provided hours, these figures have been multiplied by 60.
 
 
-Fields
-------
+Fields (order of fields is prescriptive for JSON Array)
+-------------------------------------------------------
 
 * period_id [String] A system-defined BSON ObjectId identifier for the period
 * employee\_activity_id [String] A system-defined BSON ObjectId identifier for the activity

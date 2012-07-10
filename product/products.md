@@ -77,12 +77,12 @@ Create product
 
 ```json
 {
-  "name": "Magazine ads"
+  "name": "Magazine ads",
   "revenue_stream": {"id":"67cc67093475061e3d95369d"}
 }
 ```
 
-This will return `201 Created`, with the location of the new product in the `Location` header along with the current JSON representation of the product if the creation was a success. See the **Get channel* endpoint for more info.
+This will return `201 Created`, with the location of the new product in the `Location` header along with the current JSON representation of the product if the creation was a success. See the **Get product** endpoint for more info.
 
 
 Update product
@@ -92,7 +92,7 @@ Update product
 
 ```json
 {
-  "name": "Affiliate revenue"
+  "name": "Affiliate revenue",
   "revenue_stream":{"id":"67cc67093475061e3d95369d"}
 }
 ```

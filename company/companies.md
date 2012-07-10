@@ -94,7 +94,7 @@ Get company
 Create company
 --------------
 
-* `POST /companies.json` will create a new company and its users (at least one) from the parameters passed.
+* `POST /companies.json` will create a new company from the parameters passed.
 
 _Note: In the absence of a company-specific subdomain, requests may be made to app.activecell.com_
 
@@ -106,17 +106,8 @@ _Note: In the absence of a company-specific subdomain, requests may be made to a
 	"postal-code": "10010",
 	"url": "sterlingcooperdraperpryce.com",
 	"industry": {"id":"37cc67093475061e3d95369d"}
-	"users": [
-		{"id": "67cc67093475061e3d95369d"},
-	  {"name": "Don Draper", "email": "don.draper@sterlingcooper.com", "password": "reallyWhitman"},
-		{"name": "Peggy Olson", "email": "peggy.olson@sterlingcooper.com"}
-	]
 }
 ```
-
-* To create a new company associated with an existing user, simply pass the existing user's id in the users array. 
-* To create a new user to be associated with the company, provide the name, email, and password for the new user
-* If a password is not provided, an email will be sent to the email provided with a password create request
 
 This will return `201 Created`, with the location of the new company in the `Location` header along with the current JSON representation of the company if the creation was a success. See the **Get company* endpoint for more info.
 
@@ -137,18 +128,11 @@ Update channel
 }
 ```
 
-_Note: Company users cannot be updated via a PUT request. To add or remove users for an existing company, see the **users** endpoints._
-
 This will return `200 OK` if the update was a success, along with the current JSON representation of the company in the response body. If the user does not have access to update the company, you'll see `403 Forbidden`. See the **Get company** endpoint for more info.
 
 
-Delete company
--------------
-
-* `DELETE /companies/17cc67093475061e3d95369d.json` will delete the company specified and return `204 No Content` if that was successful. If the user does not have access to delete the company, you'll see `403 Forbidden`.
-
-Intive users
-------------
+Invite users to the company
+---------------------------
 
 * `PUT /api/v1/companies/17cc67093475061e3d95369d/invite_user.json` will invite an user with given email address to the company
 
@@ -159,6 +143,7 @@ Intive users
   }
 }
 ```
+
 
 Remove user from the company
 ----------------------------
@@ -173,3 +158,8 @@ Remove user from the company
 }
 ```
 
+
+Delete company
+-------------
+
+* `DELETE /companies/17cc67093475061e3d95369d.json` will delete the company specified and return `204 No Content` if that was successful. If the user does not have access to delete the company, you'll see `403 Forbidden`.
