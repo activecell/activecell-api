@@ -51,7 +51,7 @@ Get revenue stream
 {
   "id": "17cc67093475061e3d95369d",
   "name": "Professional services",
-	"unit revenue forecast":[
+	"unit_revenue_forecast":[
 		{
 		  "scenario_id":"27cc67093475061e3d95369d", 
 		  "segment_id":"37cc67093475061e3d95369d", 
