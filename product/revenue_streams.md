@@ -51,23 +51,23 @@ Get revenue stream
 {
   "id": "17cc67093475061e3d95369d",
   "name": "Professional services",
-	"unit_revenue_forecast":[
-		{
-		  "scenario_id":"27cc67093475061e3d95369d", 
-		  "segment_id":"37cc67093475061e3d95369d", 
-		  "unit_revenue_forecast":100
-		},
-		{
-		  "scenario_id":"27cc67093475061e3d95369d", 
-		  "segment_id":"57cc67093475061e3d95369d", 
-		  "unit_revenue_forecast":200
-		  },
-		{
-		  "scenario_id":"27cc67093475061e3d95369d", 
-		  "segment_id":"77cc67093475061e3d95369d",
-		  "unit_revenue_forecast":300
-		}
-	]
+  "unit_revenue_forecast":[
+    {
+      "scenario_id":"27cc67093475061e3d95369d", 
+      "segment_id":"37cc67093475061e3d95369d", 
+      "unit_revenue_forecast":100
+    },
+    {
+      "scenario_id":"27cc67093475061e3d95369d", 
+      "segment_id":"57cc67093475061e3d95369d", 
+      "unit_revenue_forecast":200
+    },
+    {
+      "scenario_id":"27cc67093475061e3d95369d", 
+      "segment_id":"77cc67093475061e3d95369d",
+      "unit_revenue_forecast":300
+    }
+  ]
 }
 ```
 
