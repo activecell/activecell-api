@@ -16,10 +16,10 @@ Fields
 * id [String] A system-defined BSON ObjectId identifier for the channel
 * name [String] The name of the company (user-defined or retrieved from QuickBooks)
 * subdomain [String] The subdomain to activecell.com used to access the company's data through the API and analysis through the application
-* country [Country] The company's origin country (see Get countries)
+* country_id [Country] The company's origin country (see Get countries)
 * postal-code [String] A postal code used in concert with the country field for demographic purposes ("zip code" in the USA)
 * url [String] A link to the company's primary website
-* industry [String] The company's industry (see Get industries)
+* industry_id [String] The company's industry (see Get industries)
 
 
 Get companies
