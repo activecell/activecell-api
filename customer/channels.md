@@ -19,7 +19,7 @@ Fields
 * commission [Float] A percentage rate to be applied to revenue to calculate commission value
   * The value must be greater than or equal to 0 but _may_ be greater than 1.0
   * _Note: 20% should be represented as 0.2 rather than 20._
-* channel-segment mix [Array] An array of channel/segment mix line items (see below)
+* channel_segment_mix [Array] An array of channel/segment mix line items (see below)
 
 **Channel/segment mix:**
 
@@ -69,11 +69,11 @@ Get channel
   "id": "17cc67093475061e3d95369d",
   "name": "Content marketing",
   "commission": 0,
-	"channel-segment mix":[
-		{"segment_id":"47cc67093475061e3d95369d", "distribution":0.4},
-		{"segment_id":"57cc67093475061e3d95369d", "distribution":0.3},
-		{"segment_id":"67cc67093475061e3d95369d", "distribution":0.3}
-	]
+  "channel_segment_mix":[
+	  {"segment_id":"47cc67093475061e3d95369d", "distribution":0.4},
+	  {"segment_id":"57cc67093475061e3d95369d", "distribution":0.3},
+	  {"segment_id":"67cc67093475061e3d95369d", "distribution":0.3}
+  ]
 }
 ```
 
@@ -87,10 +87,10 @@ Create channel
 {
   "name": "Affiliate sales",
   "commission": 0.1,
-	"channel-segment mix":[
-		{"segment_id":"47cc67093475061e3d95369d", "distribution":0.6},
-		{"segment_id":"57cc67093475061e3d95369d", "distribution":0.4}
-	]
+  "channel_segment_mix":[
+	  {"segment_id":"47cc67093475061e3d95369d", "distribution":0.6},
+	  {"segment_id":"57cc67093475061e3d95369d", "distribution":0.4}
+  ]
 }
 ```
 
@@ -108,9 +108,9 @@ Update channel
 {
   "name": "Direct sales",
   "commission": 25,
-	"channel-segment mix":[
-		{"segment_id":"47cc67093475061e3d95369d", "distribution":1}
-	]
+  "channel_segment_mix":[
+    {"segment_id":"47cc67093475061e3d95369d", "distribution":1}
+  ]
 }
 ```
 
