@@ -20,7 +20,7 @@ Fields
 Get segments
 ------------
 
-* `GET /segments.json` will return the all the segments for the company. There is no pagination because we currently limit companies to 50 segments (more than 10 is rare!).
+* `GET /api/v1/segments.json` will return the all the segments for the company. There is no pagination because we currently limit companies to 50 segments (more than 10 is rare!).
 
 ```json
 [
@@ -43,7 +43,7 @@ Get segments
 Get segment
 -----------
 
-* `GET /segments/1.json` will return the specified segment
+* `GET /api/v1/segments/17cc67093475061e3d95369d.json` will return the specified segment
 
 ```json
 {

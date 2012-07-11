@@ -25,7 +25,7 @@ Fields
 Get companies
 ------------
 
-* `GET /companies.json` will return the all the companies to which the authenticated user has access. There is no pagination because we currently limit users to 50 companies (most users have 1!).
+* `GET /api/v1/companies.json` will return the all the companies to which the authenticated user has access. There is no pagination because we currently limit users to 50 companies (most users have 1!).
 
 ```json
 [
@@ -65,7 +65,7 @@ Get companies
 Get company
 -----------
 
-* `GET /companies/17cc67093475061e3d95369d.json` will return the specified company and its users
+* `GET /api/v1/companies/17cc67093475061e3d95369d.json` will return the specified company and its users
 
 ```json
 {

@@ -20,7 +20,7 @@ Fields
 Get users
 ------------
 
-* `GET /users.json` will return the all the users for the company. There is no pagination because we currently limit companies to 50 users.
+* `GET /api/v1/users.json` will return the all the users for the company. There is no pagination because we currently limit companies to 50 users.
 
 ```json
 [
@@ -45,7 +45,7 @@ Get users
 Get user
 -----------
 
-* `GET /users/17cc67093475061e3d95369d.json` will return the specified user and the companies to which he/she has access
+* `GET /api/v1/users/17cc67093475061e3d95369d.json` will return the specified user and the companies to which he/she has access
 
 ```json
 {

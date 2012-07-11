@@ -25,7 +25,7 @@ Fields
 Get industries
 ------------
 
-* `GET /industries.json` will return our canonical list of industries. There is no pagination because we curate the list and keep in short.
+* `GET /api/v1/industries.json` will return our canonical list of industries. There is no pagination because we curate the list and keep in short.
 
 ```json
 [
@@ -48,7 +48,7 @@ Get industries
 Get industry
 ------------
 
-* `GET /industries/27cc67093475061e3d95369d.json` will return the specified industry and suggestions for streams, channels, segments, and stages.
+* `GET /api/v1/industries/27cc67093475061e3d95369d.json` will return the specified industry and suggestions for streams, channels, segments, and stages.
 
 ```json
 {

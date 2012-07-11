@@ -38,7 +38,7 @@ Fields
 Get accounts
 ------------
 
-* `GET /accounts.json` will return the all the accounts for the company.
+* `GET /api/v1/accounts.json` will return the all the accounts for the company.
 
 ```json
 [
@@ -77,7 +77,7 @@ Get accounts
 Get account
 -----------
 
-* `GET /accounts/17cc67093475061e3d95369d.json` will return the specified account
+* `GET /api/v1/accounts/17cc67093475061e3d95369d.json` will return the specified account
 
 ```json
 {

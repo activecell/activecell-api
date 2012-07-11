@@ -20,7 +20,7 @@ Fields
 Get scenarios
 ------------
 
-* `GET /scenarios.json` will return the all the scenarios for the company. There is no pagination because we currently limit companies to 10 scenarios (more than 3 is rare!).
+* `GET /api/v1/scenarios.json` will return the all the scenarios for the company. There is no pagination because we currently limit companies to 10 scenarios (more than 3 is rare!).
 
 ```json
 [
@@ -43,7 +43,7 @@ Get scenarios
 Get scenario
 -----------
 
-* `GET /scenarios/17cc67093475061e3d95369d.json` will return the specified scenario and all of its forecast inputs
+* `GET /api/v1/scenarios/17cc67093475061e3d95369d.json` will return the specified scenario and all of its forecast inputs
 
 ```json
 {

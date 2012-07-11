@@ -20,7 +20,7 @@ Fields
 Get customers
 ------------
 
-* `GET /customers.json` will return the all the customers for the company.
+* `GET /api/v1/customers.json` will return the all the customers for the company.
 
 ```json
 [
@@ -67,7 +67,7 @@ Get customers
 Get customer
 -----------
 
-* `GET /customers/17cc67093475061e3d95369d.json` will return the specified customer
+* `GET /api/v1/customers/17cc67093475061e3d95369d.json` will return the specified customer
 
 ```json
 {
