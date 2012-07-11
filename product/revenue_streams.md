@@ -19,10 +19,10 @@ Fields
 * name [String] The name of the stream (user-defined or imported from QuickBooks)
 
 
-Get streams
+Get revenue streams
 ------------
 
-* `GET /streams.json` will return the all the revenue streams for the company. There is no pagination because we currently limit companies to 50 streams (more than 10 is rare!).
+* `GET /revenue_streams.json` will return the all the revenue streams for the company. There is no pagination because we currently limit companies to 50 streams (more than 10 is rare!).
 
 ```json
 [
@@ -42,10 +42,10 @@ Get streams
 ```
 
 
-Get stream
+Get revenue stream
 -----------
 
-* `GET /streams/17cc67093475061e3d95369d.json` will return the specified stream and its forecast channel/segment mix
+* `GET /revenue_streams/17cc67093475061e3d95369d.json` will return the specified stream and its forecast channel/segment mix
 
 ```json
 {
@@ -72,10 +72,10 @@ Get stream
 ```
 
 
-Create stream
+Create revenue stream
 --------------
 
-* `POST /streams.json` will create a new revenue stream from the parameters passed.
+* `POST /revenue_streams.json` will create a new revenue stream from the parameters passed.
 
 ```json
 {
@@ -86,10 +86,10 @@ Create stream
 This will return `201 Created`, with the location of the new stream in the `Location` header along with the current JSON representation of the stream if the creation was a success. See the **Get stream** endpoint for more info.
 
 
-Update stream
+Update revenue stream
 --------------
 
-* `PUT /streams/27cc67093475061e3d95369d.json` will update the stream from the parameters passed.
+* `PUT /revenue_streams/27cc67093475061e3d95369d.json` will update the stream from the parameters passed.
 
 ```json
 {
@@ -100,9 +100,9 @@ Update stream
 This will return `200 OK` if the update was a success, along with the current JSON representation of the stream in the response body. If the user does not have access to update the stream, you'll see `403 Forbidden`. See the **Get stream** endpoint for more info.
 
 
-Delete stream
+Delete revenue stream
 -------------
 
-* `DELETE /streams/27cc67093475061e3d95369d.json` will delete the stream specified and return `204 No Content` if that was successful. If the user does not have access to delete the stream, you'll see `403 Forbidden`.
+* `DELETE /revenue_streams/27cc67093475061e3d95369d.json` will delete the stream specified and return `204 No Content` if that was successful. If the user does not have access to delete the stream, you'll see `403 Forbidden`.
 
 Note: At least one revenue stream must exist for a company, so an attempt to delete the last remaining revenue stream will return `403 Forbidden` as well.
