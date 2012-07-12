@@ -22,7 +22,7 @@ Fields
 Get countries
 ------------
 
-* `GET /api/v1/countries.json` will return our canonical list of countries. There is no pagination because we curate the list and keep in short.
+* `GET /countries.json` will return our canonical list of countries. There is no pagination because we curate the list and keep in short.
 
 ```json
 [

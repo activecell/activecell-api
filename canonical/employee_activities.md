@@ -19,7 +19,7 @@ Fields
 Get employee activities
 ------------
 
-* `GET /api/v1/employee_activities.json` will return our canonical list of employee activities. There is no pagination because we curate the list and keep in short.
+* `GET /employee_activities.json` will return our canonical list of employee activities. There is no pagination because we curate the list and keep in short.
 
 ```json
 [
@@ -42,7 +42,7 @@ Get employee activities
 Get employee activity
 -----------
 
-* `GET /api/v1/employee_activities/17cc67093475061e3d95369d.json` will return the specified employee activity
+* `GET /employee_activities/17cc67093475061e3d95369d.json` will return the specified employee activity
 
 ```json
 {

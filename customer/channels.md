@@ -36,7 +36,7 @@ This is the forecast "distribution" of inbound customers across the company's se
 Get channels
 ------------
 
-* `GET /api/v1/channels.json` will return the all the channels for the company. There is no pagination because we currently limit companies to 50 channels (more than 10 is rare!).
+* `GET /channels.json` will return the all the channels for the company. There is no pagination because we currently limit companies to 50 channels (more than 10 is rare!).
 
 ```json
 [
@@ -62,7 +62,7 @@ Get channels
 Get channel
 -----------
 
-* `GET /api/v1/channels/1.json` will return the specified channel and its forecast channel/segment mix
+* `GET /channels/1.json` will return the specified channel and its forecast channel/segment mix
 
 ```json
 {

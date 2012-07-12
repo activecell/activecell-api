@@ -25,7 +25,7 @@ Fields
 Get companies
 ------------
 
-* `GET /api/v1/companies.json` will return the all the companies to which the authenticated user has access. There is no pagination because we currently limit users to 50 companies (most users have 1!).
+* `GET /companies.json` will return the all the companies to which the authenticated user has access. There is no pagination because we currently limit users to 50 companies (most users have 1!).
 
 ```json
 [
@@ -65,7 +65,7 @@ Get companies
 Get company
 -----------
 
-* `GET /api/v1/companies/17cc67093475061e3d95369d.json` will return the specified company and its users
+* `GET /companies/17cc67093475061e3d95369d.json` will return the specified company and its users
 
 ```json
 {
@@ -134,7 +134,7 @@ This will return `200 OK` if the update was a success, along with the current JS
 Invite users to the company
 ---------------------------
 
-* `PUT /api/v1/companies/17cc67093475061e3d95369d/invite_user.json` will invite an user with given email address to the company
+* `PUT /companies/17cc67093475061e3d95369d/invite_user.json` will invite an user with given email address to the company
 
 ```json
 {
@@ -148,7 +148,7 @@ Invite users to the company
 Remove user from the company
 ----------------------------
 
-* `DELETE /api/v1/companies/17cc67093475061e3d95369d/remove_user.json` will remove an user with given email address from the company
+* `DELETE /companies/17cc67093475061e3d95369d/remove_user.json` will remove an user with given email address from the company
 
 ```json
 {
