@@ -67,6 +67,7 @@ Get product
     "id":"47cc67093475061e3d95369d",
     "name":"Professional services"
   }
+}
 ```
 
 
@@ -78,7 +79,7 @@ Create product
 ```json
 {
   "name": "Magazine ads",
-  "revenue_stream": {"id":"67cc67093475061e3d95369d"}
+  "revenue_stream_id":"67cc67093475061e3d95369d"
 }
 ```
 
@@ -93,7 +94,7 @@ Update product
 ```json
 {
   "name": "Affiliate revenue",
-  "revenue_stream":{"id":"67cc67093475061e3d95369d"}
+  "revenue_stream_id": "67cc67093475061e3d95369d"
 }
 ```
 
