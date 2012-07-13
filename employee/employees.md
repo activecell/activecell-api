@@ -79,7 +79,7 @@ Create employee
 ```json
 {
   "name": "Roger Sterling",
-  "employee_type": {"id":"67cc67093475061e3d95369d"}
+  "employee_type_id": "67cc67093475061e3d95369d"
 }
 ```
 
@@ -94,7 +94,7 @@ Update employee
 ```json
 {
   "name": "Roger Sterling",
-  "employee_type":{"id":"67cc67093475061e3d95369d"}
+  "employee_type_id": "67cc67093475061e3d95369d"
 }
 ```
 
