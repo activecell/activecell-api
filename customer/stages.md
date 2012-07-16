@@ -5,9 +5,11 @@ Customer Acquisition Stages
 >
 > -Source
 
-Paragraph 1
+Regrettably, customers typically don't show up out of the clear blue sky. In most business models, there is a customer acquisition funnel with multiple "stages" in process. Only a portion of potential customers in one stage reach the next stage, and sometimes there is a "lag period" during the sales/marketing cycle.
 
-Paragraph 2
+For example, in a traditional sales model, businesses encounter Prospects, some portion of whom become Leads, and some portion of Leads actually become Customers. For web traffic, businesses often see Visitors, some portion of whom become Trials, some portion of whom become Customers.
+
+By tracking the conversion across these key stages, it is possible to optimize your customer acquisition process, particularly across different channels.
 
 Fields
 ------
