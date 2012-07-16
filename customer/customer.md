@@ -29,7 +29,11 @@ Get customers
     "name": "Lucky Strike",
     "channel":{
       "id":"47cc67093475061e3d95369d",
-      "name":"Content marketing"
+      "name":"Content marketing",
+      "commission": 0.2,
+      "channel_segment_mix":[
+        {"segment_id":"47cc67093475061e3d95369d", "distribution":1}
+      ]
     },
     "segment":{
       "id":"57cc67093475061e3d95369d",
@@ -41,7 +45,12 @@ Get customers
     "name": "London Fog",
     "channel":{
       "id":"67cc67093475061e3d95369d",
-      "name":"Direct sales"
+      "name":"Direct sales",
+      "commission": 0.4,
+      "channel_segment_mix":[
+        {"segment_id":"47cc67093475061e3d95369d", "distribution":0.6},
+        {"segment_id":"57cc67093475061e3d95369d", "distribution":0.4}
+      ]
     },
     "segment":{
       "id":"77cc67093475061e3d95369d",
@@ -53,7 +62,11 @@ Get customers
     "name": "Unilever",
     "channel":{
       "id":"87cc67093475061e3d95369d",
-      "name":"Events"
+      "name":"Events",
+      "commission": 1.0,
+      "channel_segment_mix":[
+        {"segment_id":"47cc67093475061e3d95369d", "distribution":1.0},
+      ]
     },
     "segment":{
       "id":"97cc67093475061e3d95369d",
@@ -75,7 +88,9 @@ Get customer
   "name": "Lucky Strike",
   "channel":{
     "id":"47cc67093475061e3d95369d",
-    "name":"Content marketing"
+    "name":"Content marketing",
+    "commission": 0.0,
+    "channel_segment_mix": []
   },
   "segment":{
     "id":"57cc67093475061e3d95369d",
@@ -94,8 +109,8 @@ Create customer
 {
   "id": "17cc67093475061e3d95369d",
   "name": "Lucky Strike",
-  "channel":{"id":"47cc67093475061e3d95369d"},
-  "segment":{"id":"57cc67093475061e3d95369d"}
+  "channel_id": "47cc67093475061e3d95369d",
+  "segment_id": "57cc67093475061e3d95369d"
 }
 ```
 
@@ -111,8 +126,8 @@ Update customer
 {
   "id": "17cc67093475061e3d95369d",
   "name": "Lucky Strike",
-  "channel":{"id":"47cc67093475061e3d95369d"},
-  "segment":{"id":"57cc67093475061e3d95369d"}
+  "channel_id": "47cc67093475061e3d95369d",
+  "segment_id": "57cc67093475061e3d95369d"
 }
 ```
 
