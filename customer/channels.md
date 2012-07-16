@@ -44,16 +44,28 @@ Get channels
     "id": "17cc67093475061e3d95369d",
     "name": "Content marketing",
     "commission": 0,
+    "channel_segment_mix":[
+      {"segment_id":"47cc67093475061e3d95369d", "distribution":1}
+    ]
   },
   {
     "id": "27cc67093475061e3d95369d",
     "name": "Direct sales",
     "commission": 0.2,
+    "channel_segment_mix":[
+      {"segment_id":"47cc67093475061e3d95369d", "distribution":0.6},
+      {"segment_id":"57cc67093475061e3d95369d", "distribution":0.4}
+    ]
   },
   {
     "id": "37cc67093475061e3d95369d",
     "name": "Events",
     "commission": 0,
+    "channel_segment_mix":[
+      {"segment_id":"47cc67093475061e3d95369d", "distribution":0.4},
+      {"segment_id":"57cc67093475061e3d95369d", "distribution":0.3},
+      {"segment_id":"67cc67093475061e3d95369d", "distribution":0.3}
+    ]
   }
 ]
 ```
