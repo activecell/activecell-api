@@ -148,7 +148,7 @@ Invite users to the company
 Remove user from the company
 ----------------------------
 
-* `DELETE /companies/17cc67093475061e3d95369d/remove_user.json` will remove an user with given email address from the company
+* `PUT /companies/17cc67093475061e3d95369d/remove_user.json` will remove an user with given email address from the company
 
 ```json
 {
