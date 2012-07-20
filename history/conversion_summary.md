@@ -27,27 +27,27 @@ Get conversion summary
 
 ```json
 [
-  [
+  {
     "id": "17cc67093475061e3d95369d",
     "period_id": "27cc67093475061e3d95369d",
     "stage_id": "37cc67093475061e3d95369d",
     "channel_id": "47cc67093475061e3d95369d",
     "customer_volume": 72
-  ],
-  [
+  },
+  {
     "id": "57cc67093475061e3d95369d",
     "period_id": "67cc67093475061e3d95369d",
     "stage_id": "37cc67093475061e3d95369d",
     "channel_id": "47cc67093475061e3d95369d",
     "customer_volume": 91
-  ],
-  [
+  },
+  {
     "id": "77cc67093475061e3d95369d",
     "period_id": "87cc67093475061e3d95369d",
     "stage_id": "37cc67093475061e3d95369d",
     "channel_id": "47cc67093475061e3d95369d",
     "customer_volume": 32
-  ]
+  }
 ]
 ```
 
