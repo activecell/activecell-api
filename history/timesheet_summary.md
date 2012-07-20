@@ -35,35 +35,28 @@ Get timesheet summary
 ```json
 [
   [
-    "17cc67093475061e3d95369d",
-    "27cc67093475061e3d95369d",
-    "37cc67093475061e3d95369d",
-    "47cc67093475061e3d95369d",
-    "57cc67093475061e3d95369d",
-    "67cc67093475061e3d95369d",
-    120
+    "period_id": "17cc67093475061e3d95369d",
+    "employee_activity_id": "37cc67093475061e3d95369d",
+    "product_id": "47cc67093475061e3d95369d",
+    "customer_id": "57cc67093475061e3d95369d",
+    "employee_id": "67cc67093475061e3d95369d",
+    "amount_minutes": 120
   ],
   [
-    "77cc67093475061e3d95369d",
-    "27cc67093475061e3d95369d",
-    "37cc67093475061e3d95369d",
-    "47cc67093475061e3d95369d",
-    "57cc67093475061e3d95369d",
-    "67cc67093475061e3d95369d",
-    240
+    "period_id": "21cc67093475061e3d95369d",
+    "employee_activity_id": "22cc67093475061e3d95369d",
+    "product_id": "23cc67093475061e3d95369d",
+    "customer_id": "24cc67093475061e3d95369d",
+    "employee_id": "25cc67093475061e3d95369d",
+    "amount_minutes": 240
   ],
   [
-    "87cc67093475061e3d95369d",
-    "27cc67093475061e3d95369d",
-    "37cc67093475061e3d95369d",
-    "47cc67093475061e3d95369d",
-    "57cc67093475061e3d95369d",
-    "67cc67093475061e3d95369d",
-    480
+    "period_id": "31cc67093475061e3d95369d",
+    "employee_activity_id": "32cc67093475061e3d95369d",
+    "product_id": "33cc67093475061e3d95369d",
+    "customer_id": "34cc67093475061e3d95369d",
+    "employee_id": "35cc67093475061e3d95369d",
+    "amount_minutes": 480
   ]
 ]
 ```
-
-**Critical JSON Array note:** Due to the potential size of these datasets, data is transmitted as a JSON Array rather than the traditional "Verbose" JSON featured throughout most of the API. The order of the fields reflects the order in the "Fields" section of this document.
-
-
