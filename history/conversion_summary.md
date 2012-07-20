@@ -28,31 +28,28 @@ Get conversion summary
 ```json
 [
   [
-    "17cc67093475061e3d95369d",
-    "27cc67093475061e3d95369d",
-    "37cc67093475061e3d95369d",
-    "47cc67093475061e3d95369d",
-    72
+    "id": "17cc67093475061e3d95369d",
+    "period_id": "27cc67093475061e3d95369d",
+    "stage_id": "37cc67093475061e3d95369d",
+    "channel_id": "47cc67093475061e3d95369d",
+    "customer_volume": 72
   ],
   [
-    "57cc67093475061e3d95369d",
-    "67cc67093475061e3d95369d",
-    "37cc67093475061e3d95369d",
-    "47cc67093475061e3d95369d",
-    91
+    "id": "57cc67093475061e3d95369d",
+    "period_id": "67cc67093475061e3d95369d",
+    "stage_id": "37cc67093475061e3d95369d",
+    "channel_id": "47cc67093475061e3d95369d",
+    "customer_volume": 91
   ],
   [
-    "77cc67093475061e3d95369d",
-    "87cc67093475061e3d95369d",
-    "37cc67093475061e3d95369d",
-    "47cc67093475061e3d95369d",
-    32
+    "id": "77cc67093475061e3d95369d",
+    "period_id": "87cc67093475061e3d95369d",
+    "stage_id": "37cc67093475061e3d95369d",
+    "channel_id": "47cc67093475061e3d95369d",
+    "customer_volume": 32
   ]
 ]
 ```
-
-**Critical JSON Array note:** Due to the potential size of these datasets, data is transmitted as a JSON Array rather than the traditional "Verbose" JSON featured throughout most of the API. The order of the fields reflects the order in the "Fields" section of this document.
-
 
 Update conversion summary
 -------------------------
