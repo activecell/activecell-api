@@ -37,7 +37,7 @@ Fields (order of fields is prescriptive for JSON Array)
 * amount_cents [Integer] The line amount, in USD converted to cents (divided by 100)
 
 
-Get financial summary
+Get financial transactions
 ---------------------
 
 Will return a detailed record of financial transaction line items filtered by the query parameters.
