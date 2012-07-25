@@ -42,7 +42,7 @@ Fields (order of fields is prescriptive for JSON Array)
 * amount_minutes [Integer] The aggregated amount, in minutes
 
 
-Get financial summary
+Get financial transactions
 ---------------------
 
 will return a detailed record of financial transaction line items filtered by the query parameters.
