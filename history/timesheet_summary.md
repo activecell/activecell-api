@@ -34,29 +34,29 @@ Get timesheet summary
 
 ```json
 [
-  [
+  {
     "period_id": "17cc67093475061e3d95369d",
     "employee_activity_id": "37cc67093475061e3d95369d",
     "product_id": "47cc67093475061e3d95369d",
     "customer_id": "57cc67093475061e3d95369d",
     "employee_id": "67cc67093475061e3d95369d",
     "amount_minutes": 120
-  ],
-  [
+  },
+  {
     "period_id": "21cc67093475061e3d95369d",
     "employee_activity_id": "22cc67093475061e3d95369d",
     "product_id": "23cc67093475061e3d95369d",
     "customer_id": "24cc67093475061e3d95369d",
     "employee_id": "25cc67093475061e3d95369d",
     "amount_minutes": 240
-  ],
-  [
+  },
+  {
     "period_id": "31cc67093475061e3d95369d",
     "employee_activity_id": "32cc67093475061e3d95369d",
     "product_id": "33cc67093475061e3d95369d",
     "customer_id": "34cc67093475061e3d95369d",
     "employee_id": "35cc67093475061e3d95369d",
     "amount_minutes": 480
-  ]
+  }
 ]
 ```
