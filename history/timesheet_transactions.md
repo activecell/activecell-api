@@ -42,10 +42,10 @@ Fields (order of fields is prescriptive for JSON Array)
 * amount_minutes [Integer] The aggregated amount, in minutes
 
 
-Get financial transactions
+Get timesheet transactions
 ---------------------
 
-will return a detailed record of financial transaction line items filtered by the query parameters.
+Will return a detailed record of timesheet transaction line items filtered by the query parameters.
 
 ``` 
 /timesheet_transactions.json?period_id=17cc67093475061e3d95369d
