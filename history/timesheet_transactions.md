@@ -19,11 +19,11 @@ Time is expressed simply in minutes. Where the source data has provided hours, t
 
 Query parameters
 ----------------
-* pd [String] A system-defined BSON ObjectId identifier for the period
-* a [String] A system-defined BSON ObjectId identifier for the employee activity
-* pt [String] A system-defined BSON ObjectId identifier for the product
-* c [String] A system-defined BSON ObjectId identifier for the customer
-* e [String] A system-defined BSON ObjectId identifier for the employee
+* period_id [String] A system-defined BSON ObjectId identifier for the period
+* employee\_activity_id [String] A system-defined BSON ObjectId identifier for the employee activity
+* product_id [String] A system-defined BSON ObjectId identifier for the product
+* customer_id [String] A system-defined BSON ObjectId identifier for the customer
+* employee_id [String] A system-defined BSON ObjectId identifier for the employee
 
 
 Fields (order of fields is prescriptive for JSON Array)
@@ -45,51 +45,56 @@ Fields (order of fields is prescriptive for JSON Array)
 Get financial summary
 ---------------------
 
-* `GET /financial_summary.json?pd=17cc67093475061e3d95369d&a=27cc67093475061e3d95369d&pt=37cc67093475061e3d95369d&c=47cc67093475061e3d95369d&e=57cc67093475061e3d95369d` will return a detailed record of financial transaction line items filtered by the query parameters.
+will return a detailed record of financial transaction line items filtered by the query parameters.
+
+``` 
+/timesheet_transactions.json?period_id=17cc67093475061e3d95369d
+                            &employee_activity_id=27cc67093475061e3d95369d
+                            &product_id=37cc67093475061e3d95369d
+                            &customer_id=47cc67093475061e3d95369d
+                            &employee_id=57cc67093475061e3d95369d
+```
 
 ```json
 [
-  [
-    "17cc67093475061e3d95369d",
-    "27cc67093475061e3d95369d",
-    "37cc67093475061e3d95369d",
-    "47cc67093475061e3d95369d",
-    "57cc67093475061e3d95369d",
-    "67cc67093475061e3d95369d",
-    "Quickbooks Desktop Timesheet",
-    "100a",
-    "3b",
-    "2012-01-01",
-    120
-  ],
-  [
-    "87cc67093475061e3d95369d",
-    "27cc67093475061e3d95369d",
-    "37cc67093475061e3d95369d",
-    "47cc67093475061e3d95369d",
-    "57cc67093475061e3d95369d",
-    "67cc67093475061e3d95369d",
-    "Quickbooks Desktop Timesheet",
-    "129300",
-    "1",
-    "2012-01-01",
-    240
-  ],
-  [
-    "97cc67093475061e3d95369d",
-    "27cc67093475061e3d95369d",
-    "37cc67093475061e3d95369d",
-    "47cc67093475061e3d95369d",
-    "57cc67093475061e3d95369d",
-    "67cc67093475061e3d95369d",
-    "Quickbooks Desktop Timesheet",
-    "100234a",
-    "2",
-    "2012-01-01",
-    480
-  ]
+  {
+    "id": "17cc67093475061e3d95369d",
+    "period_id": "27cc67093475061e3d95369d",
+    "employee_activity_id": "37cc67093475061e3d95369d",
+    "product_id": "47cc67093475061e3d95369d",
+    "customer_id": "57cc67093475061e3d95369d",
+    "employee_id": "67cc67093475061e3d95369d",
+    "document_type": "Quickbooks Desktop Timesheet",
+    "document_id": "100a",
+    "document_line": "3b",
+    "transaction_date": "2012-01-01",
+    "amount_minutes": 120
+  },
+  {
+    "id": "17cc67093475061e3d95369d",
+    "period_id": "27cc67093475061e3d95369d",
+    "employee_activity_id": "37cc67093475061e3d95369d",
+    "product_id": "47cc67093475061e3d95369d",
+    "customer_id": "57cc67093475061e3d95369d",
+    "employee_id": "67cc67093475061e3d95369d",
+    "document_type": "Quickbooks Desktop Timesheet",
+    "document_id": "129300",
+    "document_line": "1",
+    "transaction_date": "2012-01-01",
+    "amount_minutes": 240
+  },
+  {
+    "id": "17cc67093475061e3d95369d",
+    "period_id": "27cc67093475061e3d95369d",
+    "employee_activity_id": "37cc67093475061e3d95369d",
+    "product_id": "47cc67093475061e3d95369d",
+    "customer_id": "57cc67093475061e3d95369d",
+    "employee_id": "67cc67093475061e3d95369d",
+    "document_type": "Quickbooks Desktop Timesheet",
+    "document_id": "100234a",
+    "document_line": "2",
+    "transaction_date": "2012-01-01",
+    "amount_minutes": 480
+  }
 ]
 ```
-
-**Critical JSON Array note:** Due to the potential size of these datasets, data is transmitted as a JSON Array rather than the traditional "Verbose" JSON featured throughout most of the API. The order of the fields reflects the order in the "Fields" section of this document.
-
