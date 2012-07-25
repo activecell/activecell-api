@@ -43,11 +43,11 @@ Get financial summary
 Will return a detailed record of financial transaction line items filtered by the query parameters.
 
 ```
-GET /financial_transactions.json?period_id=17cc67093475061e3d95369d\
-                                &account_id=27cc67093475061e3d95369d\
-                                &product_id=37cc67093475061e3d95369d\
-                                &customer_id=47cc67093475061e3d95369d\
-                                &employee_id=57cc67093475061e3d95369d\
+GET /financial_transactions.json?period_id=17cc67093475061e3d95369d
+                                &account_id=27cc67093475061e3d95369d
+                                &product_id=37cc67093475061e3d95369d
+                                &customer_id=47cc67093475061e3d95369d
+                                &employee_id=57cc67093475061e3d95369d
                                 &vendor_id=67cc67093475061e3d95369d
 ``` 
 
@@ -69,30 +69,30 @@ GET /financial_transactions.json?period_id=17cc67093475061e3d95369d\
   },
   {
     "id": "500d3c64b0207ae648000005",
-    "period_id": "600d3c64b0207ae648000005",
-    "account_id": "700d3c64b0207ae648000005",
-    "product_id": "800d3c64b0207ae648000005",
-    "customer_id": "900d3c64b0207ae648000005",
-    "employee_id": "100d3c64b0207ae648000005",
-    "vendor_id": "200d3c64b0207ae648000005",
+    "period_id": "27cc67093475061e3d95369d",
+    "account_id": "37cc67093475061e3d95369d",
+    "product_id": "47cc67093475061e3d95369d",
+    "customer_id": "57cc67093475061e3d95369d",
+    "employee_id": "67cc67093475061e3d95369d",
+    "vendor_id": "77cc67093475061e3d95369d",
     "document_type": "Quickbooks Desktop Bill Payment",
     "document_id": "129300",
     "document_line": "1",
-    "transaction_date": "2012-03-21",
+    "transaction_date": "2012-01-01",
     "amount_cents": 25000
   },
   {
     "id": "167d3c64b0313ae648909021",
-    "period_id": "267d3c64b0313ae648909021",
-    "account_id": "367d3c64b0313ae648909021",
-    "product_id": "467d3c64b0313ae648909021",
-    "customer_id": "567d3c64b0313ae648909021",
-    "employee_id": "667d3c64b0313ae648909021",
-    "vendor_id": "767d3c64b0313ae648909021",
+    "period_id": "27cc67093475061e3d95369d",
+    "account_id": "37cc67093475061e3d95369d",
+    "product_id": "47cc67093475061e3d95369d",
+    "customer_id": "57cc67093475061e3d95369d",
+    "employee_id": "67cc67093475061e3d95369d",
+    "vendor_id": "77cc67093475061e3d95369d",
     "document_type": "Quickbooks Desktop Journal Entry",
     "document_id": "100234a",
     "document_line": "2",
-    "transaction_date": "2012-02-12",
+    "transaction_date": "2012-01-01",
     "amount_cents": 10000000
   }
 ]

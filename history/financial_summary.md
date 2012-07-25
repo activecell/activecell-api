@@ -39,21 +39,21 @@ Get financial summary
     "amount_cents": 10000
   },
   {
-    "period_id": "10cc67093475061e3d95369d",
-    "account_id": "11cc67093475061e3d95369d",
-    "product_id": "12cc67093475061e3d95369d",
-    "customer_id": "13cc67093475061e3d95369d",
-    "employee_id": "14cc67093475061e3d95369d",
-    "vendor_id": "15cc67093475061e3d95369d",
+    "period_id": "600d3c64b0207ae648000005",
+    "account_id": "700d3c64b0207ae648000005",
+    "product_id": "800d3c64b0207ae648000005",
+    "customer_id": "900d3c64b0207ae648000005",
+    "employee_id": "100d3c64b0207ae648000005",
+    "vendor_id": "200d3c64b0207ae648000005",
     "amount_cents": 20000
   },
   {
-    "period_id": "30cc67093475061e3d95369d",
-    "account_id": "31cc67093475061e3d95369d",
-    "product_id": "32cc67093475061e3d95369d",
-    "customer_id": "33cc67093475061e3d95369d",
-    "employee_id": "34cc67093475061e3d95369d",
-    "vendor_id": "35cc67093475061e3d95369d",
+    "period_id": "267d3c64b0313ae648909021",
+    "account_id": "367d3c64b0313ae648909021",
+    "product_id": "467d3c64b0313ae648909021",
+    "customer_id": "567d3c64b0313ae648909021",
+    "employee_id": "667d3c64b0313ae648909021",
+    "vendor_id": "767d3c64b0313ae648909021",
     "amount_cents": 30000    
   }
 ]
