@@ -27,31 +27,29 @@ Get churn forecast
 
 ```json
 [
-  [
-    "17cc67093475061e3d95369d",
-    "27cc67093475061e3d95369d",
-    "37cc67093475061e3d95369d",
-    "57cc67093475061e3d95369d",
-    72
-  ],
-  [
-    "67cc67093475061e3d95369d",
-    "77cc67093475061e3d95369d",
-    "37cc67093475061e3d95369d",
-    "57cc67093475061e3d95369d",
-    91
-  ],
-  [
-    "87cc67093475061e3d95369d",
-    "97cc67093475061e3d95369d",
-    "37cc67093475061e3d95369d",
-    "57cc67093475061e3d95369d",
-    32
-  ]
+  {
+    "id": "17cc67093475061e3d95369d",
+    "scenario_id": "27cc67093475061e3d95369d",
+    "period_id": "37cc67093475061e3d95369d",
+    "segment_id": "57cc67093475061e3d95369d",
+    "churn_forecast": 72
+  },
+  {
+    "id": "67cc67093475061e3d95369d",
+    "scenario_id": "77cc67093475061e3d95369d",
+    "period_id": "37cc67093475061e3d95369d",
+    "segment_id": "57cc67093475061e3d95369d",
+    "churn_forecast": 91
+  },
+  {
+    "id": "87cc67093475061e3d95369d",
+    "scenario_id": "97cc67093475061e3d95369d",
+    "period_id": "37cc67093475061e3d95369d",
+    "segment_id": "57cc67093475061e3d95369d",
+    "churn_forecast": 32
+  }
 ]
 ```
-
-**Critical JSON Array note:** Due to the potential size of these datasets, data is transmitted as a JSON Array rather than the traditional "Verbose" JSON featured throughout most of the API. The order of the fields reflects the order in the "Fields" section of this document.
 
 
 Update churn forecast
