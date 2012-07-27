@@ -20,7 +20,7 @@ Fields
 * period_id [String] A system-defined BSON ObjectId identifier for the period
 * stage_id [String] A system-defined BSON ObjectId identifier for the customer acquisition stage
 * channel_id [String] A system-defined BSON ObjectId identifier for the channel
-* volume_forecast [Integer] The planned volume of customers for that channel, stage, and period
+* conversion_forecast [Integer] The planned volume of customers for that channel, stage, and period
 
 
 Get conversion forecast
@@ -36,7 +36,7 @@ Get conversion forecast
     "period_id": "37cc67093475061e3d95369d",
     "stage_id": "47cc67093475061e3d95369d",
     "channel_id": "57cc67093475061e3d95369d",
-    "volume_forecast": 72
+    "conversion_forecast": 72
   },
   {
     "id": "67cc67093475061e3d95369d",
@@ -44,7 +44,7 @@ Get conversion forecast
     "period_id": "37cc67093475061e3d95369d",
     "stage_id": "47cc67093475061e3d95369d",
     "channel_id": "57cc67093475061e3d95369d",
-    "volume_forecast": 91
+    "conversion_forecast": 91
   },
   {
     "id": "87cc67093475061e3d95369d",
@@ -52,7 +52,7 @@ Get conversion forecast
     "period_id": "37cc67093475061e3d95369d",
     "stage_id": "47cc67093475061e3d95369d",
     "channel_id": "57cc67093475061e3d95369d",
-    "volume_forecast": 32
+    "conversion_forecast": 32
   }
 ]
 ```
@@ -65,7 +65,7 @@ Update conversion forecast
 
 ```json
 {
-  "volume_forecast": 49
+  "conversion_forecast": 49
 }
 ```
 
