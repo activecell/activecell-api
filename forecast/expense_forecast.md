@@ -71,7 +71,7 @@ Get expense forecasts
     "name":"Web Hosting",
     "category_id": "07cc67093475061e3d95369d",
     "occurrence": "Revenue Percent",
-    "revenue_threshold": 0.000125
+    "percent_revenue": 0.000125
   },
   {
     "id": "97cc67093475061e3d95369d",
