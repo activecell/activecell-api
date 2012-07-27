@@ -16,7 +16,7 @@ Fields
 * id [String] A system-defined BSON ObjectId identifier for the churn forecast record
 * scenario_id [String] A system-defined BSON ObjectId identifier for the scenario
 * segment_id [String] A system-defined BSON ObjectId identifier for the customer segment
-* stream_id [String] A system-defined BSON ObjectId identifier for the revenue stream
+* revenue_stream_id [String] A system-defined BSON ObjectId identifier for the revenue stream
 * unit\_rev_forecast [Integer] The planned unit revenue for that segment and stream, in USD converted to cents (divided by 100)
 
 
@@ -30,21 +30,21 @@ Get unit revenue forecast
   {
     "id": "17cc67093475061e3d95369d",
     "scenario_id": "27cc67093475061e3d95369d",
-    "stream_id": "37cc67093475061e3d95369d",
+    "revenue_stream_id": "37cc67093475061e3d95369d",
     "segment_id": "57cc67093475061e3d95369d",
     "unit_rev_forecast": 4999
   },
   {
     "id": "67cc67093475061e3d95369d",
     "scenario_id": "77cc67093475061e3d95369d",
-    "stream_id": "37cc67093475061e3d95369d",
+    "revenue_stream_id": "37cc67093475061e3d95369d",
     "segment_id": "57cc67093475061e3d95369d",
     "unit_rev_forecast": 9999
   },
   {
     "id": "87cc67093475061e3d95369d",
     "scenario_id": "97cc67093475061e3d95369d",
-    "stream_id": "37cc67093475061e3d95369d",
+    "revenue_stream_id": "37cc67093475061e3d95369d",
     "segment_id": "57cc67093475061e3d95369d",
     "unit_rev_forecast": 14999
   }
