@@ -19,7 +19,7 @@ Fields
 * category_id [String] A system-defined BSON ObjectId identifier for the category
 * occurrence [String] Specifies how the forecast should be calculated (see valid types below)
 * occurrence_month [Integer] If annual occurrence, occurrence\_month specifies in which month the annual event occurs
-* occurrence_period [String] A system-defined BSON ObjectId identifier for the period in which the one-time event occurs if fixed occurrence
+* occurrence_period_id [String] A system-defined BSON ObjectId identifier for the period in which the one-time event occurs if fixed occurrence
 * fixed_cost [Integer] The fixed amount of the expense, in USD converted to cents (divided by 100). Valid if occurrence is Monthly, Annually, or Fixed.
 * percent_revenue [Float] The percentage of revenue to use for calculating the expense if occurrence is 'Revenue Percent'
 
@@ -62,7 +62,7 @@ Get expense forecasts
     "name":"Office Buildout",
     "category_id": "77cc67093475061e3d95369d",
     "occurrence": "Fixed",
-    "occurrence_period": "87cc67093475061e3d95369d",
+    "occurrence_period_id": "87cc67093475061e3d95369d",
     "fixed_cost":3100000
   },
   {
@@ -132,7 +132,7 @@ Update expense forecast
   "name":"Office Buildout",
   "category_id": "77cc67093475061e3d95369d",
   "occurrence": "Fixed",
-  "occurrence_period": "87cc67093475061e3d95369d",
+  "occurrence_period_id": "87cc67093475061e3d95369d",
   "fixed_cost":3100000
 }
 ```
