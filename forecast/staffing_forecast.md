@@ -18,7 +18,7 @@ Fields
 * employee\_type_id [String] A system-defined BSON ObjectId identifier for the employee type
 * occurrence [String] Specifies how the forecast should be calculated (see valid types below)
 * occurrence_month [Integer] If annual occurrence, occurrence\_month specifies in which month the annual event occurs
-* occurrence_period [String] A system-defined BSON ObjectId identifier for the period in which the one-time event occurs if fixed occurrence
+* occurrence_period_id [String] A system-defined BSON ObjectId identifier for the period in which the one-time event occurs if fixed occurrence
 * fixed_delta [Integer] The change (positive or negative) in the number of employees planned for that employee type in that period. Valid if occurrence is Monthly, Annually, or Fixed.
 * revenue_threshold [Integer] The level of revenue corresponding to 1 employee, in USD converted to cents (divided by 100), if occurrence is 'Revenue Threshold'
 
@@ -57,7 +57,7 @@ Get staffing forecasts
     "scenario_id": "27cc67093475061e3d95369d",
     "employee_type_id": "77cc67093475061e3d95369d",
     "occurrence": "Fixed",
-    "occurrence_period": "87cc67093475061e3d95369d",
+    "occurrence_period_id": "87cc67093475061e3d95369d",
     "fixed_delta":3
   },
   {
