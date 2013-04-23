@@ -5,7 +5,7 @@ Raw Document
 >
 > -Source
 
-Your company's financial and timesheet history are assembled based on a large collection of "documents" from source systems. These documents include invoices, bills, bill payments, timesheets, etc. While it is rare to require the document itself, sometimes this can be helpful in diagnosing unexpected analysis results, whether caused by human error, source system error, or (unlikely, we know!) ActiveCell's import of the data.
+Your company's financial and timesheet history are assembled based on a large collection of "documents" from source systems. These documents include invoices, bills, bill payments, timesheets, etc. While it is rare to require the document itself, sometimes this can be helpful in diagnosing unexpected analysis results, whether caused by human error, source system error, or (unlikely, we know!) Activecell's import of the data.
 
 
 Fields
@@ -27,4 +27,4 @@ Get raw document
 }
 ```
 
-Note: In cases where the source system provides XML or other formats of data, ActiveCell will have automatically converted to JSON format for compatibility.
+Note: In cases where the source system provides XML or other formats of data, Activecell will have automatically converted to JSON format for compatibility.

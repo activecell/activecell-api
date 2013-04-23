@@ -8,7 +8,7 @@ Products
 
 Some businesses sell products. Some businesses sell services. Some businesses sell both. For brevity, we refer to the "items" being sold as individual products, even if in reality they are services, and if this is an awkward construction for your business, we will shortly be able to customize the verbiage on the site for your particular business, so hang in there!
 
-Your product list may map to a list in your accounting or inventory software, or it may be more informal, something to track manually using ActiveCell.
+Your product list may map to a list in your accounting or inventory software, or it may be more informal, something to track manually using Activecell.
 
 
 Fields

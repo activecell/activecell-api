@@ -5,7 +5,7 @@ Scenarios
 >
 > -Inception
 
-ActiveCell allows for multiple "scenarios" for your forecasts. By default, all forecast inputs begin in an initial "Base" scenario, but new scenarios can be created by duplicating an existing scenario and then editing the new scenario.
+Activecell allows for multiple "scenarios" for your forecasts. By default, all forecast inputs begin in an initial "Base" scenario, but new scenarios can be created by duplicating an existing scenario and then editing the new scenario.
 
 Note: Historical data is not associated with a scenario. (There should only be one version of what already happened!)
 

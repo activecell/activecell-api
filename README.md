@@ -1,7 +1,7 @@
-API documentation for ActiveCell
+API documentation for Activecell
 ================================
 
-You can use this site to understand how to connect to the ActiveCell API. We use it ourselves, as a matter of fact, not only for our pet projects and to load up sample data...but indeed our application itself uses the API exclusively to retrieve and persist data.
+You can use this site to understand how to connect to the Activecell API. We use it ourselves, as a matter of fact, not only for our pet projects and to load up sample data...but indeed our application itself uses the API exclusively to retrieve and persist data.
 
 _Editor's note on **API documentation format**:_ This API documentation site draws heavily if not completely from [37signals API documentation](https://github.com/37signals/api). We feel they really got it right and that others should get their API documentation into such a simple and digestible format. Hat's off to the crew at 37signals. Thanks for the inspiration!
 
@@ -34,15 +34,15 @@ That's all!
 Authentication
 --------------
 
-If you're making a private integration with ActiveCell for your own purposes, you can use HTTP Basic authentication. This is secure since all requests use SSL.
+If you're making a private integration with Activecell for your own purposes, you can use HTTP Basic authentication. This is secure since all requests use SSL.
 
-_Future: If you're making a public integration with ActiveCell for others to enjoy, you must use OAuth 2. This allows users to authorize your application to use ActiveCell on their behalf without having to copy/paste API tokens or touch sensitive login info._
+_Future: If you're making a public integration with Activecell for others to enjoy, you must use OAuth 2. This allows users to authorize your application to use Activecell on their behalf without having to copy/paste API tokens or touch sensitive login info._
 
 
 No XML, just JSON
 -----------------
 
-We only support JSON for serialization of data. Our format is to have no root element and we use snake\_case to describe attribute keys. This means that you have to send `Content-Type: application/json; charset=utf-8` when you're POSTing or PUTing data into ActiveCell. **All API URLs end in .json to indicate that they accept and return JSON.**
+We only support JSON for serialization of data. Our format is to have no root element and we use snake\_case to describe attribute keys. This means that you have to send `Content-Type: application/json; charset=utf-8` when you're POSTing or PUTing data into Activecell. **All API URLs end in .json to indicate that they accept and return JSON.**
 
 You'll receive a `415 Unsupported Media Type` response code if you attempt to use a different URL suffix or leave out the `Content-Type` header.
 
@@ -55,7 +55,7 @@ You must make use of the HTTP freshness headers to lessen the load on our server
 Handling errors
 ---------------
 
-If ActiveCell is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later.
+If Activecell is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later.
 
 We have another API for checking our system status at http://status.activecell.com/api.
 

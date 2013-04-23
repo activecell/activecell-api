@@ -7,7 +7,7 @@ Employee activities
 
 In order to figure out how well your employees are doing, it can be very helpful to track or estimate how much time each spends on a range of different activities, from billable client work (in some business models), to Sales, Marketing, Research & Development...filling out TPS reports...tracking time bureaucratically...you name it. Of course, the best situation is where time tracking is automated, or where simplifying assumptions can be used to map employee time to activities. 
 
-This is our canonical list of employee activities, since there often isn't a clean list in a business's financial systems. By mapping employee time to this list, you can gain much in analyzing your employees time in ActiveCell.
+This is our canonical list of employee activities, since there often isn't a clean list in a business's financial systems. By mapping employee time to this list, you can gain much in analyzing your employees time in Activecell.
 
 Fields
 ------

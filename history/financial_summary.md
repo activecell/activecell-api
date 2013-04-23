@@ -5,7 +5,7 @@ Financial Summary
 >
 > -Source
 
-Your company's financial history is an immutable reality (or should be!) that is currently pulled from your financial system. A minority of ActiveCell customers have expressed a desire to be able to edit their financial history within the application, but the overwhelming majority prefer to have the facts come from the accounting system, and facts are facts. We agree.
+Your company's financial history is an immutable reality (or should be!) that is currently pulled from your financial system. A minority of Activecell customers have expressed a desire to be able to edit their financial history within the application, but the overwhelming majority prefer to have the facts come from the accounting system, and facts are facts. We agree.
 
 The financial summary is an aggregate of all the individual transactions that occur for a given period, account, product, customer, employee, and vendor. Most transactions will not have all dimensions populated, and so blank (or "null") values are to be expected for some of these dimensions in each record supplied. Dollar values are expressed as integers in cents, so be certain to convert to dollars by dividing by 100.
 

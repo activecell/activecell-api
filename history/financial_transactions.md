@@ -5,7 +5,7 @@ Financial Transactions
 >
 > -Source
 
-Your company's financial history is an immutable reality (or should be!) that is currently pulled from your financial system. A minority of ActiveCell customers have expressed a desire to be able to edit their financial history within the application, but the overwhelming majority prefer to have the facts come from the accounting system, and facts are facts. We agree.
+Your company's financial history is an immutable reality (or should be!) that is currently pulled from your financial system. A minority of Activecell customers have expressed a desire to be able to edit their financial history within the application, but the overwhelming majority prefer to have the facts come from the accounting system, and facts are facts. We agree.
 
 The financial transaction list is detailed record of individual transaction line items pulled from a financial system or imported through the API. Given the sheer volume of transactions possible and the size of each transaction, it is recommended that the aggregated financial summary be employed wherever possible and that the transaction history be filtered as granularly as possible when employed. Most transactions will not have all dimensions populated, and so blank (or "null") values are to be expected for some of these dimensions in each record supplied. Dollar values are expressed as integers in cents, so be certain to convert to dollars by dividing by 100.
 

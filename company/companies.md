@@ -5,7 +5,7 @@ Companies
 >
 > -Wall Street
 
-The company is what ties together all the information in ActiveCell. In the future, reporting will be possible across multiple companies so that franchises can view performance of separate business or for business owners who store separate business units in separate QuickBooks files.
+The company is what ties together all the information in Activecell. In the future, reporting will be possible across multiple companies so that franchises can view performance of separate business or for business owners who store separate business units in separate QuickBooks files.
 
 But for today, all reporting flows down from a given company, and the creation of a new user is tied to the creation of a new company. Further, new users can be invited to an existing company by any user who has access to the company.
 
