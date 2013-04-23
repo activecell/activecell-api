@@ -1,7 +1,7 @@
 API documentation for ActiveCell
 ================================
 
-You can use this site to understand how to connect to the ActiveCell API. We use it ourselves, as a matter of fact, not only for our pet projects and to load up sample data...but indeed our application itself uses the API exclusively to retrieve and persist data. It's called dog-fooding, and we're all over it.
+You can use this site to understand how to connect to the ActiveCell API. We use it ourselves, as a matter of fact, not only for our pet projects and to load up sample data...but indeed our application itself uses the API exclusively to retrieve and persist data.
 
 _Editor's note on **API documentation format**:_ This API documentation site draws heavily if not completely from [37signals API documentation](https://github.com/37signals/api). We feel they really got it right and that others should get their API documentation into such a simple and digestible format. Hat's off to the crew at 37signals. Thanks for the inspiration!
 
@@ -55,7 +55,7 @@ You must make use of the HTTP freshness headers to lessen the load on our server
 Handling errors
 ---------------
 
-If ActiveCell is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later. 
+If ActiveCell is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later.
 
 We have another API for checking our system status at http://status.activecell.com/api.
 
@@ -72,57 +72,57 @@ API ready for use
 
 Canonical data (get only):
 
-* [Periods](https://github.com/profitably/activecell-api/blob/master/canonical/periods.md)
-* [Industries](https://github.com/profitably/activecell-api/blob/master/canonical/industries.md)
-* [Countries](https://github.com/profitably/activecell-api/blob/master/canonical/countries.md)
-* [Employee activities](https://github.com/profitably/activecell-api/blob/master/canonical/employee_activities.md)
+* [Periods](https://github.com/activecell/activecell-api/blob/master/canonical/periods.md)
+* [Industries](https://github.com/activecell/activecell-api/blob/master/canonical/industries.md)
+* [Countries](https://github.com/activecell/activecell-api/blob/master/canonical/countries.md)
+* [Employee activities](https://github.com/activecell/activecell-api/blob/master/canonical/employee_activities.md)
 
 Company data:
 
-* [Users](https://github.com/profitably/activecell-api/blob/master/company/users.md)
-* [Companies](https://github.com/profitably/activecell-api/blob/master/company/companies.md)
-* [Scenarios](https://github.com/profitably/activecell-api/blob/master/company/scenarios.md)
-* [Accounts](https://github.com/profitably/activecell-api/blob/master/company/accounts.md)
+* [Users](https://github.com/activecell/activecell-api/blob/master/company/users.md)
+* [Companies](https://github.com/activecell/activecell-api/blob/master/company/companies.md)
+* [Scenarios](https://github.com/activecell/activecell-api/blob/master/company/scenarios.md)
+* [Accounts](https://github.com/activecell/activecell-api/blob/master/company/accounts.md)
 
 Product data:
 
-* [Products](https://github.com/profitably/activecell-api/blob/master/product/products.md)
-* [Revenue streams](https://github.com/profitably/activecell-api/blob/master/product/streams.md)
+* [Products](https://github.com/activecell/activecell-api/blob/master/product/products.md)
+* [Revenue streams](https://github.com/activecell/activecell-api/blob/master/product/streams.md)
 
 Customer data:
 
-* [Customers](https://github.com/profitably/activecell-api/blob/master/customer/customers.md)
-* [Segments](https://github.com/profitably/activecell-api/blob/master/customer/segments.md)
-* [Channels (including segment mix)](https://github.com/profitably/activecell-api/blob/master/customer/channels.md)
-* [Customer acquisition stages](https://github.com/profitably/activecell-api/blob/master/customer/stages.md)
+* [Customers](https://github.com/activecell/activecell-api/blob/master/customer/customers.md)
+* [Segments](https://github.com/activecell/activecell-api/blob/master/customer/segments.md)
+* [Channels (including segment mix)](https://github.com/activecell/activecell-api/blob/master/customer/channels.md)
+* [Customer acquisition stages](https://github.com/activecell/activecell-api/blob/master/customer/stages.md)
 
 Employee data:
 
-* [Employees](https://github.com/profitably/activecell-api/blob/master/employee/employees.md)
-* [Employee types (including activity mix)](https://github.com/profitably/activecell-api/blob/master/employee/employee_types.md)
+* [Employees](https://github.com/activecell/activecell-api/blob/master/employee/employees.md)
+* [Employee types (including activity mix)](https://github.com/activecell/activecell-api/blob/master/employee/employee_types.md)
 
 Vendor data:
 
-* [Vendors](https://github.com/profitably/activecell-api/blob/master/vendor/vendors.md)
-* [Categories](https://github.com/profitably/activecell-api/blob/master/vendor/categories.md)
+* [Vendors](https://github.com/activecell/activecell-api/blob/master/vendor/vendors.md)
+* [Categories](https://github.com/activecell/activecell-api/blob/master/vendor/categories.md)
 
 History:
 
-* [Conversion summary](https://github.com/profitably/activecell-api/blob/master/history/conversion_summary.md)
-* [Financial summary](https://github.com/profitably/activecell-api/blob/master/history/financial_summary.md)
-* [Financial transactions](https://github.com/profitably/activecell-api/blob/master/history/financial_txns.md)
-* [Timesheet summary](https://github.com/profitably/activecell-api/blob/master/history/timesheet_summary.md)
-* [Timesheet transactions](https://github.com/profitably/activecell-api/blob/master/history/timesheet_txns.md)
-* [Raw document](https://github.com/profitably/activecell-api/blob/master/history/document.md)
+* [Conversion summary](https://github.com/activecell/activecell-api/blob/master/history/conversion_summary.md)
+* [Financial summary](https://github.com/activecell/activecell-api/blob/master/history/financial_summary.md)
+* [Financial transactions](https://github.com/activecell/activecell-api/blob/master/history/financial_txns.md)
+* [Timesheet summary](https://github.com/activecell/activecell-api/blob/master/history/timesheet_summary.md)
+* [Timesheet transactions](https://github.com/activecell/activecell-api/blob/master/history/timesheet_txns.md)
+* [Raw document](https://github.com/activecell/activecell-api/blob/master/history/document.md)
 
 Forecasts:
 
-* [Unit revenue forecast](https://github.com/profitably/activecell-api/blob/master/forecast/unit_rev_forecast.md)
-* [Unit cac forecast](https://github.com/profitably/activecell-api/blob/master/forecast/unit_cac_forecast.md)
-* [Conversion forecast](https://github.com/profitably/activecell-api/blob/master/forecast/conversion_forecast.md)
-* [Churn forecast](https://github.com/profitably/activecell-api/blob/master/forecast/churn_forecast.md)
-* [Staffing forecast](https://github.com/profitably/activecell-api/blob/master/forecast/staffing_forecast.md)
-* [Expense forecast](https://github.com/profitably/activecell-api/blob/master/forecast/expense_forecast.md)
+* [Unit revenue forecast](https://github.com/activecell/activecell-api/blob/master/forecast/unit_rev_forecast.md)
+* [Unit cac forecast](https://github.com/activecell/activecell-api/blob/master/forecast/unit_cac_forecast.md)
+* [Conversion forecast](https://github.com/activecell/activecell-api/blob/master/forecast/conversion_forecast.md)
+* [Churn forecast](https://github.com/activecell/activecell-api/blob/master/forecast/churn_forecast.md)
+* [Staffing forecast](https://github.com/activecell/activecell-api/blob/master/forecast/staffing_forecast.md)
+* [Expense forecast](https://github.com/activecell/activecell-api/blob/master/forecast/expense_forecast.md)
 
 
 Help us make it better
