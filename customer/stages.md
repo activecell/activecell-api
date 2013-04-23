@@ -1,9 +1,11 @@
 Customer Acquisition Stages
 =================
 
-> **Quote.**  
+> **Fear leads to anger.**  
+> **Anger leads to hate.**  
+> **Hate leads to suffering.**  
 >
-> -Source
+> -Yoda
 
 Regrettably, customers typically don't show up out of the clear blue sky. In most business models, there is a customer acquisition funnel with multiple "stages" in process. Only a portion of potential customers in one stage reach the next stage, and sometimes there is a "lag period" during the sales/marketing cycle.
 

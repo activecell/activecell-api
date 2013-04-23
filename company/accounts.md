@@ -17,6 +17,7 @@ Fields
 * name [String] The name of the account (user-defined)
 * type [String] The account type must be one of the canonical types (see below)
 * sub_type [String] User-defined sub-classifications below account type
+* expense_group [String] Optional tag for payroll accounts and sales & marketing accounts
 * account_number [String] An optional, user-defined number used for sorting
 * parent\_account_id [String] An optional BSON ObjectId identifier for a parent account
 * current\_balance [Integer] Current account balance (applies to Asset, Liability, and Equity only)
@@ -33,6 +34,14 @@ Fields
 * 'Cost of Goods Sold'
 * 'Expense'
 * 'Non-Posting'
+
+**Valid expense groups:**
+
+* 'PAYROLL'
+* 'CAC'
+* [ no expense group defaults to null value ]
+
+_Note: expense group is only valid for the Expense account type_
 
 
 Get accounts
